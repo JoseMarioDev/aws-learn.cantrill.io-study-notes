@@ -32,6 +32,7 @@
   - can be private/public
   - download/upload images
 - key concepts
+
   ![Alt text](img/containerkeyconcepts.png 'layers of docker image')
 
 ### ECS - Concepts
