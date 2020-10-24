@@ -1,7 +1,7 @@
 ### EFS Architecture
 
 - content
-- subcontent
+  - subcontent
 
 ### DEMOs
 
