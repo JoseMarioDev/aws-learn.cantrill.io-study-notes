@@ -57,6 +57,36 @@ Elastic Container Service
   - Task Role: IAM role with the Task assumes
   - Service: How many copies, HA, restarts, scaling. use if business critical
 
-### ECS - Cluster Mode and Demo
+### ECS - Cluster Mode
 
 #
+
+- 2 modes: EC2 and Fargate
+- define what part you manage/AWS manages
+- cost difference each mode
+- EC2 mode:
+  - runs in ECS cluster in a VPC
+  - users registry to store images (ex: docker hub)
+  - images deployed by tasks/services
+- great middle ground, uses EC2 instances
+
+  ![Alt text](img/ec2mode.png 'ec2mode with ec2 instances being deployed by registry')
+
+- Fargate mode:
+
+  - removes overhead
+  - dont have to manage EC2 instances
+  - paying for instances whether you're using them or not
+  - AWS maintains the platform
+  - still uses clusters and vpc
+  - no servers to manage, little like serverless?
+
+  ![Alt text](img/ec2fargate.png 'fargate uses a farmlike approach,shared by all but private')
+
+- three main options: know the difference:
+  - EC2 vs ECS(ec2) vs ECS(fargate)
+  - if your business uses containers already, use ECS
+  - ECS(ec2) large workload or price conscious
+  - fargate - large workload or want less overhead
+    - fargate good for small/burst workloads
+    - same for batch periodic workloads
