@@ -39,10 +39,24 @@
 
 #
 
-testing
+Elastic Container Service
+
+- product that allows you to use docker containers inside AWS environment
+  - done 2 modes: Fargate and EC2 mode
+  - ECS lets you create clusters
+  - create container definition to tell ECS where your container is
+  - task definition is the application information in that container
+    - store resources use by the application
+    - stores task role. IAM role used to interact with AWS resources
+- service definition
+  - provides scalability and HA
+- Tasks and Services are what is deployed into Cluster
+- key points
+  - Container definition: defines image and ports used for container
+  - Task Definition - applies to the application as a whole. specify the security(role), containers, resources
+  - Task Role: IAM role with the Task assumes
+  - Service: How many copies, HA, restarts, scaling. use if business critical
 
 ### ECS - Cluster Mode and Demo
 
 #
-
-testing
