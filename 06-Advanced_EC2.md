@@ -3,7 +3,7 @@
 #
 
 - Bootstrapping is the process of configuring EC2 instance to perform automated install & configuration steps 'post launch' before instance is brought into service
-- executed only once at **launch time**
+- executed only once at launch time
 - anything in User Data is executed by the instance OS
 - if problem w/data instance can still be created, but you end up with bad config(see pic)
 - User data is opaque to EC2 just a block of data
@@ -15,40 +15,52 @@
   ![Alt text](img/ecbootstrap.png 'workflow')
 
 - boot-time-to-service-time
+
   - time taken from launch time to service time
   - post launch time is time it takes to install apps on top of creating instance
   - can use AMI baking, front load the image
   - best way is to use AMI baking and bootstraping for optimal
-    ![Alt text](img/ec2boottime.png 'best practices')
 
-### Enhanced Bootstrapping with CFN-INIT
+  ![Alt text](img/ec2boottime.png 'best practices')
 
-#
-
-### EC2 Instance Roles & Profile
+## Enhanced Bootstrapping with CFN-INIT
 
 #
 
-### SSM Parameter Store
+- slightly beyond scope of test?
+- is a way to pass complex boostrap instructions to an instance
+- allows you to set state for things like packages, users, groups, sources and files within resources inside a template
+- works similar to console UI
+- **cfn-init** helper script installed on EC2 OS
+- checks for Desired State
+- passed into instance via user data
+- works with stack updates
+- **CreationPolicy and Signals**:  something that is added to logical resource inside template. 
+  - creates stack -> instance -> waits for signal from resource
+## EC2 Instance Roles & Profile
 
 #
 
-### System and Application Logging on EC2
+## SSM Parameter Store
 
 #
 
-### EC2 Placement Groups - part 1
+## System and Application Logging on EC2
 
 #
 
-### EC2 Placement Groups - part 2
+## EC2 Placement Groups - part 1
 
 #
 
-### Dedicated Hosts
+## EC2 Placement Groups - part 2
 
 #
 
-### Enhanced Networking & EBS Optimized
+## Dedicated Hosts
+
+#
+
+## Enhanced Networking & EBS Optimized
 
 #
