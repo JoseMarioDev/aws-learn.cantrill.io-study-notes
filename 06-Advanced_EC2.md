@@ -28,15 +28,16 @@
 #
 
 - slightly beyond scope of test?
-- is a way to pass complex boostrap instructions to an instance
+- is a way to pass complex bootstrap instructions to an instance
 - allows you to set state for things like packages, users, groups, sources and files within resources inside a template
 - works similar to console UI
 - **cfn-init** helper script installed on EC2 OS
 - checks for Desired State
 - passed into instance via user data
 - works with stack updates
-- **CreationPolicy and Signals**:  something that is added to logical resource inside template. 
+- **CreationPolicy and Signals**: something that is added to logical resource inside template.
   - creates stack -> instance -> waits for signal from resource
+
 ## EC2 Instance Roles & Profile
 
 #
