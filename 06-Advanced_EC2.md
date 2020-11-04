@@ -56,6 +56,20 @@
 
 #
 
+- systems manager parameter store
+  - storage for configuration & secrets
+  - safely store license codes, database strings, full configs and passwords
+- service of Systems Manager which allows storage and retrieval of parameters - strings, stringlist, secure strings
+- supports encryption, integrates with KMS, versioning and can be secured using IAM
+- integrates natively with many AWS services. can be accessed using CLI/APIs from anywhere
+- 2 tiers. standard vs advanced
+
+  - can create upto to 10,000 parameters with no charge
+  - is a key/value pair
+  - think .env values
+
+- ![parameter store](img/ec2parameterstore.png)
+
 ## System and Application Logging on EC2
 
 #
