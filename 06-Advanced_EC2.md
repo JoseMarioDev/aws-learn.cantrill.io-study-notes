@@ -42,6 +42,16 @@
 
 #
 
+- how applications running an EC2 instance can be given permission to access AWS resources on your behalf.
+- role is attached to profile which is attached to instance
+  -credentials are delivered inside metadata
+
+  - iam/security-credentials/role-name
+  - automatically rotated and always valid
+  - should always roles
+
+  ![ec instance roles and profiles](img/ec2instanceroles.png)
+
 ## SSM Parameter Store
 
 #
