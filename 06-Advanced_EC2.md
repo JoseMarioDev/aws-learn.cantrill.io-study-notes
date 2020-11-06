@@ -64,7 +64,7 @@
 - integrates natively with many AWS services. can be accessed using CLI/APIs from anywhere
 - 2 tiers. standard vs advanced
 
-  - can create upto to 10,000 parameters with no charge
+  - can create up to to 10,000 parameters with no charge
   - is a key/value pair
   - think .env values
 
