@@ -74,6 +74,8 @@
 
 #
 
+- **CloudWatch Agent** - adds internal instance metrics and logging collection and injection
+
 ## EC2 Placement Groups - part 1
 
 #
