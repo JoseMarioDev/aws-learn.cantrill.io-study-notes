@@ -75,6 +75,16 @@
 #
 
 - **CloudWatch Agent** - adds internal instance metrics and logging collection and injection
+  - cloudwatch is for storing and logging metrics
+  - agent allows you to capture data inside of an ec2 instance
+  - needs to have configurations and permissions to access inside of instance
+- uses an agent config file
+
+  - interacts with instance through iam role with permissions to cloudwatch logs
+  - create log group for every log you want to capture
+
+- ![flowchart of cloudwatch agent process](img/ec2cloudwatchagent.png)
+- can install and configure using cloudformation and parameter store
 
 ## EC2 Placement Groups - part 1
 
