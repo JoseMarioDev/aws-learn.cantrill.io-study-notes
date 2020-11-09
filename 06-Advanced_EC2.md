@@ -90,6 +90,11 @@
 
 #
 
+- three different types of placement groups in AWS
+  - 1. Cluster placement groups (performance)
+  - 2. Spread placement groups (resilience)
+  - 3. Partition placement groups (topology awareness)
+
 ## EC2 Placement Groups - part 2
 
 #
