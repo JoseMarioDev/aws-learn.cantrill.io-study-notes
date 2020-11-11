@@ -99,6 +99,8 @@
 
 #
 
+- Benefits and limitations of the three placement groups
+
 ## Dedicated Hosts
 
 #
