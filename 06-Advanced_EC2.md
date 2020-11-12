@@ -100,6 +100,7 @@
 #
 
 - Benefits and limitations of the three placement groups
+  - continuation of last video
 
 ## Dedicated Hosts
 
