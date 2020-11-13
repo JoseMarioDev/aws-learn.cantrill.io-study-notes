@@ -103,6 +103,7 @@
   - continuation of last video
 
 ## Dedicated Hosts
+ - cost? factor?
 
 #
 
