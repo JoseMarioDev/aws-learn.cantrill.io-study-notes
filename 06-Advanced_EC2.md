@@ -90,10 +90,39 @@
 
 #
 
+- placement groups allow you to influence placement. either physically close together or not
+
 - three different types of placement groups in AWS
-  - 1. Cluster placement groups (performance)
-  - 2. Spread placement groups (resilience)
-  - 3. Partition placement groups (topology awareness)
+
+  1. Cluster placement groups (performance)
+  2. Spread placement groups (resilience)
+  3. Partition placement groups (topology awareness)
+
+1. cluster: pack instances close together.
+
+- highest level of perform inside EC2
+- have to belong to a single Availability Zone
+- run in same space. Same rack sometimes same host
+- low latency max throughput
+- little or no resilience. because they are physically close to each other
+  if one fails all go down
+- used to achieve 10gbps single stream perform
+- exam notes:
+
+  - ![cluster placement groups](img/ec2cluster.png)
+
+2. Spread:
+
+- max amount of availability and resilience
+- can span multiple Availability Zones
+  - instances placed on diff racks
+  - limit - 7 instances per AZ
+- provides infrastructure isolation
+
+  - each instance runs in a diff rack
+  - hard limit: 7 instances per AZ
+
+  - ![cluster placement groups](img/ec2spread.png)
 
 ## EC2 Placement Groups - part 2
 
@@ -103,7 +132,8 @@
   - continuation of last video
 
 ## Dedicated Hosts
- - cost? factor?
+
+- cost? factor?
 
 #
 
