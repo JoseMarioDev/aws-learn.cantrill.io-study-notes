@@ -131,6 +131,17 @@
 - Benefits and limitations of the three placement groups
   - continuation of last video
 
+3. Partition placement groups
+
+- Similar to spread but allow for more than 7 instances per AZ
+- might need more than 7 for fault tolerance
+- you have control over what partition your instance goes to
+- 7 partitions max
+- instances can be placed in specific partition or
+- auto placed
+- ![ec2 placement groups topology](img/ec2pg1.png)
+- ![ec2 placement groups topology](img/ec2pg2.png)
+
 ## Dedicated Hosts
 
 - cost? factor?
