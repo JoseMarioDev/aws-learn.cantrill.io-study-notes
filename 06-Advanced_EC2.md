@@ -139,14 +139,23 @@
 - 7 partitions max
 - instances can be placed in specific partition or
 - auto placed
-- ![ec2 placement groups topology](img/ec2pg1.png)
-- ![ec2 placement groups topology](img/ec2pg2.png)
+
+  - ![ec2 placement groups topology](img/ec2pg1.png)
+  - ![ec2 placement groups topology](img/ec2pg2.png)
 
 ## Dedicated Hosts
 
-- cost? factor?
-
 #
+
+- are EC2 hosts which support a certain type of instance which are dedicated to your account
+- you pay an ondemand or reserved price for hosts
+- usually used for apps which use physical core/socket licensing
+- comes in specific types/families
+
+  - most require to set in advance
+
+- only need to know it exists for the exam. not covered in detail
+  - ![ec2 dedicated host](img/ec2dedicatedhost.png)
 
 ## Enhanced Networking & EBS Optimized
 
