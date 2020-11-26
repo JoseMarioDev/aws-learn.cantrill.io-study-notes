@@ -12,7 +12,7 @@
   - user data is limited to 16kb
   - can be modified when instance stopped
 
-  ![Alt text](img/ecbootstrap.png 'workflow')
+    = ![Alt text](img/ecbootstrap.png 'workflow')
 
 - boot-time-to-service-time
 
@@ -21,7 +21,7 @@
   - can use AMI baking, front load the image
   - best way is to use AMI baking and bootstraping for optimal
 
-  ![Alt text](img/ec2boottime.png 'best practices')
+  - ![Alt text](img/ec2boottime.png 'best practices')
 
 ## Enhanced Bootstrapping with CFN-INIT
 
@@ -50,7 +50,7 @@
   - automatically rotated and always valid
   - should always roles
 
-  ![ec instance roles and profiles](img/ec2instanceroles.png)
+  - ![ec instance roles and profiles](img/ec2instanceroles.png)
 
 ## SSM Parameter Store
 
@@ -68,7 +68,7 @@
   - is a key/value pair
   - think .env values
 
-- ![parameter store](img/ec2parameterstore.png)
+  - ![parameter store](img/ec2parameterstore.png)
 
 ## System and Application Logging on EC2
 
@@ -83,7 +83,8 @@
   - interacts with instance through iam role with permissions to cloudwatch logs
   - create log group for every log you want to capture
 
-- ![flowchart of cloudwatch agent process](img/ec2cloudwatchagent.png)
+  - ![flowchart of cloudwatch agent process](img/ec2cloudwatchagent.png)
+
 - can install and configure using cloudformation and parameter store
 
 ## EC2 Placement Groups - part 1
@@ -160,3 +161,11 @@
 ## Enhanced Networking & EBS Optimized
 
 #
+
+- Enhanced networking is the AWS implementation of SR-IOV.
+
+  - standard allowing physical host network card to present many logical devices utilized by instances
+  - EBS optimization on instances means dedicated bandwidth for storage networking - separate from data networking
+
+  - ![ec2 dedicated host](img/ec2enhancednetworking.png)
+  - ![ec2 dedicated host](img/ec2EBSoptimized.png)
