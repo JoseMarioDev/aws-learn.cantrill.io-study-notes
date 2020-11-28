@@ -2,7 +2,7 @@
 
 #
 
-![Alt text](img/ecbootstrap.png 'workflow')
+- Public hosted zones are hosted on public DNS nameservers managed by R53
 
 ## Route 53 Health Checks
 
