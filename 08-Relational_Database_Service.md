@@ -37,6 +37,35 @@
 
 #
 
+- pros and cons of running DBMS systems directly on EC2
+
+  - one approach is to have everything in one ec2(monolithic?)
+  - another is to have architecture split amongst multiple AZs
+
+    - cost considerations, connection considerations
+
+      ![db architecture example](img/rdsec2archtypes.png '2 diff ex of arch type setup for ec2')
+
+  - why you might run a db on ec2:
+
+    - access to db instance OS
+    - advanced db option tuning
+    - using a DB aws doesnt support
+
+      ![rds on ec2 pros](img/rdspros.png)
+
+  - why you shouldnt:
+
+    - admin overhead
+    - backups and disaster recovery mgmt
+    - EC2 runs on a single AZ. if that zone fails, db could fail
+    - features. AWS db products have amazing features
+    - EC2 is on/off - no serverless or easy scaling
+    - replication
+    - performance
+
+      ![rds cons](img/rdscons.png "why you shouldn't")
+
 ## Relational Database Services (RDS) Architecture
 
 #
