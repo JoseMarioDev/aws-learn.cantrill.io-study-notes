@@ -66,6 +66,8 @@
 
       ![rds cons](img/rdscons.png "why you shouldn't")
 
+    - next 2 lessons dedicated to demos. Migrating the wordpress db monolithic to a dedicated EC2 db
+
 ## Relational Database Services (RDS) Architecture
 
 #
