@@ -72,6 +72,35 @@
 
 #
 
+- lesson covers high level architecture of the product and details what engines are supported, access methods, and other key concepts
+- described as database-as-a-service(DBaaS)
+- provides managed database instance (can hold 1+ databases)
+  - think of it acting as a ec2 db server
+- multiple engines:
+  1. mysql
+  2. mariadb
+     3.postgres
+     4.oracle
+  3. MS sqlserver
+- supports Amazon Aurora - will be it's own lesson in the future
+
+  - ![rds arch ex for lessons](img/rdsarchitecture.png)
+
+- RDS instance
+  - access it using a CNAME
+  - can use existing tooling to access db
+  - comes in diff sizes similar to ec2 instances
+  - can be single AZ or multi AZ
+  - you provision instance
+    - comes w/block storage in same AZ
+    - can fail because all in one AZ
+- billing
+  - billed for instance
+  - also billed for storage
+- security handled via security group
+
+  - ![rds instance details](img/rdsinstances.png)
+
 ## RDS High-Availability (Multi AZ)
 
 #
