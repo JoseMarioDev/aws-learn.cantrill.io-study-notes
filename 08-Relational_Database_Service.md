@@ -101,6 +101,10 @@
 
   - ![rds instance details](img/rdsinstances.png)
 
+- next two lessons are demos
+  1. migrating a mariadb into RDS part 1
+  2. migrating a mariadb into RDS part 2
+
 ## RDS High-Availability (Multi AZ)
 
 #
