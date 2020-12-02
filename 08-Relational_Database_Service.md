@@ -109,6 +109,10 @@
 
 #
 
+- feature that provisions a standby replica which is kept in sync Synchronously with the primary instance
+  - cannot be used for performance scaling..only availability
+  - backups, software updates, and restarts can take advantage of MultiAZ to reduce user disruption
+
 ## RDS Automatic Backup, RDS Snapshots and Restore
 
 #
