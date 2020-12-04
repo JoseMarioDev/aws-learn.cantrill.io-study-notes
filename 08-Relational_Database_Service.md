@@ -110,8 +110,30 @@
 #
 
 - feature that provisions a standby replica which is kept in sync Synchronously with the primary instance
+
   - cannot be used for performance scaling..only availability
   - backups, software updates, and restarts can take advantage of MultiAZ to reduce user disruption
+
+- when it's enabled, secondary hardware is allocated inside a diff AZ
+  - known as standby replica
+- you only access RDS using the CNAME. it normally points to the primary instance
+- uses synchronous replication
+  - as soon as data is written to primary RDS drive, it is sent to secondary drive and written
+  - very little if any lag
+- if primary fails, database automatically points to secondary CNAME
+
+  - happens quickly
+  - is Highly Available but not fault tolerant
+
+  - ![rds multiAZ architecture](img/rdsmulitaz.png)
+
+exam power ups
+  1. multi AZ is not free tier. costs extra
+  2. standby replica cannot be accessed directly. no performance improvement, it's a failover improvement
+  3. failover takes 60 - 120 seconds
+  4. same region only other AZs in the same VPC
+  5. backups are taken from the Standby
+  6. az outages, primary failure, instance type change, software patching
 
 ## RDS Automatic Backup, RDS Snapshots and Restore
 
