@@ -117,6 +117,12 @@
 
 #
 
+- RDS is capable of performing manual snapshots and autobackups
+  - manual snapshots are perfomed manually and live past the termination of the RDS instance
+  - Automatic backups can be taken of an RDS instance with a 0(disabled) to 35 day retention
+    - Automatic backups also use S3 for storing transaction logs every 5 minutes - allowing for point in time recovery
+  - snapshots can be restored, but create a new RDS instance
+
 ## RDS Read-Replicas
 
 #
