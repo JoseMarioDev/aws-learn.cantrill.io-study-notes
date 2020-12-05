@@ -188,9 +188,46 @@ exam power ups
 #
 
 - read replicas can be added to an RDS instance - 5 direct per primary instance
+
   - can be in the same region or cross region replicas
   - provide read performance scaling for the instance, but also offer low rto recovery for any instance failure issues
   - don't help w/data corruption as the corruption will be replicated to the RR
+
+- RR provide two main benefits - performance and availability
+  - read only replicas of an RDS instance
+  - can use for read operations
+  - own db endpt address
+- kept in sync using Asynchronous replication
+- data is written fully to the primary instance first, then written to secondary replica instance
+  - in theory could lead to lag, depends on connection
+- can be created in same region or diff region
+
+  - if cross region , AWS handles config, it just works
+
+  ![rds read replica architecture](img/rdsreadreplica.png)
+
+- why do they matter?
+
+  - read performance improvements
+
+    - 5x direct read replicas per db instance
+    - each provide additional instance of read performance
+    - can have read replicas of read replicas, but lag can start to be a problem
+    - global perform improvements
+
+    - ![rds read replicas performance improvements](img/rdsreadperform.png)
+
+  - availability improvements
+
+    - snapshots and bkups improve RPO
+    - rtos are still a problem
+    - read replicas offer near zero RPO
+    - read replicas can be promoted quickly to primary - low RTO - only works for failures
+    - failure only. watch for data corruption. corruption gets replicated as well :(
+    - read only until promoted. not reversable
+    - global availability improvements - global resilience
+
+    - ![rds read replicas availability improvements](img/rdsreadavailability.png)
 
 ## Aurora Architecture
 
