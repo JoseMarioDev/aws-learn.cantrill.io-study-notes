@@ -160,7 +160,7 @@ exam power ups
 - represents max amt of data lost possible
 - lower the rpo, higher the cost
 
-- ![rto vs rpo chart](img/rdsrtorpo.png)
+  - ![rto vs rpo chart](img/rdsrtorpo.png)
 
 - rds backups
 
@@ -186,6 +186,11 @@ exam power ups
 ## RDS Read-Replicas
 
 #
+
+- read replicas can be added to an RDS instance - 5 direct per primary instance
+  - can be in the same region or cross region replicas
+  - provide read performance scaling for the instance, but also offer low rto recovery for any instance failure issues
+  - don't help w/data corruption as the corruption will be replicated to the RR
 
 ## Aurora Architecture
 
