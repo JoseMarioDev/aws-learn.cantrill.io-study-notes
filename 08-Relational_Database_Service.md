@@ -128,22 +128,60 @@
   - ![rds multiAZ architecture](img/rdsmulitaz.png)
 
 exam power ups
-  1. multi AZ is not free tier. costs extra
-  2. standby replica cannot be accessed directly. no performance improvement, it's a failover improvement
-  3. failover takes 60 - 120 seconds
-  4. same region only other AZs in the same VPC
-  5. backups are taken from the Standby
-  6. az outages, primary failure, instance type change, software patching
+
+1. multi AZ is not free tier. costs extra
+2. standby replica cannot be accessed directly. no performance improvement, it's a failover improvement
+3. failover takes 60 - 120 seconds
+4. same region only other AZs in the same VPC
+5. backups are taken from the Standby
+6. az outages, primary failure, instance type change, software patching
 
 ## RDS Automatic Backup, RDS Snapshots and Restore
 
 #
 
 - RDS is capable of performing manual snapshots and autobackups
+
   - manual snapshots are perfomed manually and live past the termination of the RDS instance
   - Automatic backups can be taken of an RDS instance with a 0(disabled) to 35 day retention
     - Automatic backups also use S3 for storing transaction logs every 5 minutes - allowing for point in time recovery
   - snapshots can be restored, but create a new RDS instance
+
+- important topic for exam and real world usage
+- ** RTO and RPO ** two important objectives
+
+1. RTO - recovery time objective
+
+- time between failure and full restore of service
+
+2. RPO - recovery point objective
+
+- time between the last bkup and the failure
+- represents max amt of data lost possible
+- lower the rpo, higher the cost
+
+- ![rto vs rpo chart](img/rdsrtorpo.png)
+
+- rds backups
+
+  - automatic bkups vs manual bkups
+  - manual bkups live forever
+  - automatic have a retention rate of 0 - 35
+  - can use transaction logs for 5 minute level of granularity
+
+    ![rds backups](img/rdsbackups.png)
+
+- exam power ups
+
+  1. restores create a new RDS instance - new address
+  2. restoring a manual snapshot restores single point in time
+
+  - increases rpo
+
+  3. auto bkups are diff because of transaction logs
+  4. restores arent fast think about rto
+
+  - ![rds restores exam powerup](img/rdsrestoresexampu.png)
 
 ## RDS Read-Replicas
 
