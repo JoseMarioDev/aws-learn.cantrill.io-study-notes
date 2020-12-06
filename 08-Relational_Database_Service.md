@@ -229,6 +229,10 @@ exam power ups
 
     - ![rds read replicas availability improvements](img/rdsreadavailability.png)
 
+  - next 2 lessons are Demos:
+    - using a snapshot and restore to recover data from corruption part 1
+    - using a snapshot and restore to recover data from corruption part 2
+
 ## Aurora Architecture
 
 #
