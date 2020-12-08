@@ -233,7 +233,15 @@ exam power ups
     - using a snapshot and restore to recover data from corruption part 1
     - using a snapshot and restore to recover data from corruption part 2
 
+## RDS Data Security(PRO lession - topic features in SAA-CO2)
+
+#
+
 ## Aurora Architecture
+
+#
+
+## Aurora Serverless
 
 #
 
@@ -241,7 +249,7 @@ exam power ups
 
 #
 
-## Mulit-master writes
+## Multi-master writes
 
 #
 
