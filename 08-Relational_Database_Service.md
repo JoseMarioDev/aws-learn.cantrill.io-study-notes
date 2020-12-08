@@ -233,9 +233,12 @@ exam power ups
     - using a snapshot and restore to recover data from corruption part 1
     - using a snapshot and restore to recover data from corruption part 2
 
-## RDS Data Security(PRO lession - topic features in SAA-CO2)
+## RDS Data Security(PRO lesson - topic features in SAA-CO2)
 
 #
+
+- lesson covers RDS encryption at rest and RDS IAM authentication
+- new lesson just added based on feedback on what's on the exam
 
 ## Aurora Architecture
 
