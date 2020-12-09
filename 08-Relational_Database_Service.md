@@ -244,6 +244,12 @@ exam power ups
 
 #
 
+- Aurora is a AWS designed database engine officially part of RDS
+
+- Aurora implements a number of radical design changes which offer significant performance and feature improvements over other RDS database engines.
+
+- This lesson steps through the changes introduced with the Aurora architecture.
+
 ## Aurora Serverless
 
 #
