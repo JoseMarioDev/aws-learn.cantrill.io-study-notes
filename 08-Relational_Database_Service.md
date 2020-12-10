@@ -240,6 +240,40 @@ exam power ups
 - lesson covers RDS encryption at rest and RDS IAM authentication
 - new lesson just added based on feedback on what's on the exam
 
+- security handles data while in transit
+
+  - can be mandatory ona per user basis
+  - RDS supports EBS volume encryption - KMS
+  - handled by the host/ebs
+  - can use AWS or customer managed CMK data keys
+  - storage, logs, and replicas are encrypted
+  - encryption cannot be removed
+
+  - ![rds security options](img/rdssecurity.png)
+
+- encryption at rest is handled diff ways depending on db engine used
+
+- Microsoft SQL and RDS Oracle support TDE
+
+  - encryption is handled by the db engine
+  - RDS Oracle supports CloudHSM
+    - keys controlled by user, not AWS involvement
+  - ![rds TDE for MS and Oracle](img/rdssecurityTDE.png)
+
+- rds encryption architecture:
+
+  - ![rds encryption architecture](img/rdssecurityarch.png)
+
+- RDS and IAM authentication
+
+  - normally you create a user when provisioning an RDS instance
+  - can use IAM if you want
+  - only for authentication
+  - authorization is handled by the db instance
+  - users IAM and policy to issue a token w/15 minute validity
+
+  - ![rds iam based auth](img/rdsiam.png)
+
 ## Aurora Architecture
 
 #
