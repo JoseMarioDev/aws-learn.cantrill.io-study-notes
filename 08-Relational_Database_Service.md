@@ -284,6 +284,31 @@ exam power ups
 
 - This lesson steps through the changes introduced with the Aurora architecture.
 
+- architecture is diff from RDS
+  - uses a cluster
+  - a single primary instance and 0 or more replicas
+  - replicas provide both benefits of read/write vs RDS
+  - no local storage uses cluster volume
+  - replication happens on the storage level
+  - storage system is much more resilent. uses fault tolerance to avoid data loss. no need for restores
+  - SSD based storage
+  - billing is based on what you consume
+- downsides
+  - no free tier
+  - costs - see chart
+- restore
+
+  - can enable backtrack. think "time machine"
+
+  slides:
+
+  - ![rds aurora](img/rdsaurorastorage.png)
+  - ![rds aurora](img/rdsauroraarch.png)
+  - ![rds aurora](img/rdsauroracost.png)
+  - ![rds aurora](img/rdsauroradiff.png)
+  - ![rds aurora](img/rdsaurorarestore.png)
+  - ![rds aurora](img/rdsauroraendpoints.png)
+
 ## Aurora Serverless
 
 #
