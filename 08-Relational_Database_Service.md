@@ -309,6 +309,9 @@ exam power ups
   - ![rds aurora](img/rdsaurorarestore.png)
   - ![rds aurora](img/rdsauroraendpoints.png)
 
+- next lesson is a demo
+  - migrating Wordpress onto Aurora
+
 ## Aurora Serverless
 
 #
