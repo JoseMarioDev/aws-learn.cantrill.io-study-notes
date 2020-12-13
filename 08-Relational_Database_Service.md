@@ -316,6 +316,8 @@ exam power ups
 
 #
 
+- lesson compares Aurora serverless vs Aurora provisioned
+
 ## Aurora Global Database
 
 #
