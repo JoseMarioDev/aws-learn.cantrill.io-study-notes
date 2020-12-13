@@ -290,7 +290,7 @@ exam power ups
   - replicas provide both benefits of read/write vs RDS
   - no local storage uses cluster volume
   - replication happens on the storage level
-  - storage system is much more resilent. uses fault tolerance to avoid data loss. no need for restores
+  - storage system is much more resilient. uses fault tolerance to avoid data loss. no need for restores
   - SSD based storage
   - billing is based on what you consume
 - downsides
