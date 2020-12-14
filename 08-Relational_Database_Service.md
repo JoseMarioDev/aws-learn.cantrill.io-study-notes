@@ -317,6 +317,37 @@ exam power ups
 #
 
 - lesson compares Aurora serverless vs Aurora provisioned
+- is akin to Fargate to ECS
+- removes admin overhead of managing individual db instances
+
+- creates scalable Aurora ACUs - Aurora Capacity Units
+
+  - aurora serverless cluster has a min/max CPU
+  - Cluster adjusted based on load
+  - billing based on per second consumption
+  - same resilience as Aurora Provisioned 6 copies across AZ
+
+- Architecture similarities and diffs vs Provisioned
+
+  - same cluster architectrue
+  - uses ACUs instead of servers
+  - ACUs come from a pool managed by AWS
+  - pools are stateless
+  - no local storage
+  - uses a prox fleet, application interacts w/proxy fleet and it manages the ACUs
+
+- serverless use cases
+
+  - infrequently used apps - flex billing
+  - new apps - unsure of usage
+  - variable workloads
+  - unpredictable workloads
+  - development and test databases - can pause itself
+
+- slides
+  - ![rds aurora serverless concepts](img/rdsauroraserverlessconcepts.png)
+  - ![rds aurora serverless arch](img/rdsauroraserverlessarch.png)
+  - ![rds aurora serverless cases](img/rdsauroraserverlessusecases.png)
 
 ## Aurora Global Database
 
