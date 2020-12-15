@@ -8,3 +8,8 @@
 ## Demos
 
 #
+
+- There are 3 demos total in this lesson
+  - Implementing EFS part 1
+  - Implementing EFS part 2
+  - Scaling Wordpress with EFS
