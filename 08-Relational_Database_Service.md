@@ -345,9 +345,13 @@ exam power ups
   - development and test databases - can pause itself
 
 - slides
+
   - ![rds aurora serverless concepts](img/rdsauroraserverlessconcepts.png)
   - ![rds aurora serverless arch](img/rdsauroraserverlessarch.png)
   - ![rds aurora serverless cases](img/rdsauroraserverlessusecases.png)
+
+- next lesson is a demo
+  - migrating to Aurora Serverless
 
 ## Aurora Global Database
 
