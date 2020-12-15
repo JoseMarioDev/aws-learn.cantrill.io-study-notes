@@ -357,11 +357,26 @@ exam power ups
 
 #
 
+- only need awareness of this for exam
+
 - feature of Aurora Provisioned clusters
+
   - allow data to be replicated globally providing significant RPO and RTO improvements for BC and DR planning
   - can provide performance improvements for customers - data being closer to them, in a read-only form
+  - 1 second replication time between all AWS region
 
-  
+- used cases
+  - Cross Region disaster recovery and business continuity
+  - low RPO and RTO
+  - global read scaling - low latency performance improvements
+  - 1s or less replication between regions. 1 way replication
+  - no impact on DB performance
+  - secondary regions can have 16 replicas
+  - can be promoted to R/W in event of disaster
+  - currently max of 5 secondary regions
+- ## slides:
+  - ![rds aurora global db arch](img/rdsauroraglobaldbarch.png)
+  - ![rds aurora global db cases](img/rdsauroraglobaldbcases.png)
 
 ## Multi-master writes
 
