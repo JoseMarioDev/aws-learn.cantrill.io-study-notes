@@ -382,6 +382,32 @@ exam power ups
 
 #
 
+- mode of Aurora Provisioned Clusters that allows multiple instances to perform R/W at same time.
+
+  - instead of only one primary instance have capability
+
+- default mode is single-master. one primary that r/w replicas only r
+- multiple endpoints for each instance - one for r/w endpoint, rest for r for load-bal
+- failover takes time - replicas promoted to r/w
+
+- in multi-master mode, all instances are r/w
+
+  - no concept of endpoints
+  - application can connect to any node in cluster
+  - replication between nodes in cluster
+
+- benefits:
+
+  - single-master takes time in a failover. not fault tolerant. causes disruption
+  - multi-master no disruption
+  - better, faster, availability
+
+- slides:
+  - ![rds multi-master notes](img/rdsauroramulitnotes.png)
+  - ![rds multi-master arch](img/rdsauroramulitarch.png)
+  - ![rds multi-master single](img/rdsauroramulitsingle.png)
+  - ![rds multi-master multimaster](img/rdsauroramulitmaster.png)
+
 ## Database Migration Service (DMS)
 
 #
