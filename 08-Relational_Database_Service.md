@@ -357,6 +357,10 @@ exam power ups
 
 #
 
+- feature of Aurora Provisioned clusters
+  - allow data to be replicated globally providing significant RPO and RTO improvements for BC and DR planning
+  - can provide performance improvements for customers - data being closer to them, in a read-only form
+
 ## Multi-master writes
 
 #
