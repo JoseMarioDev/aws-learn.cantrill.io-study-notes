@@ -412,5 +412,25 @@ exam power ups
 
 #
 
+-featured more and more in the exam
+
 - managed service which allows for 0 data loss, low or 0 downtime migrations between 2 database endpoints
 - service is capable of moving databases in or out of AWS
+
+- runs using a replication instance
+
+  - runs a task needs to define source and destination endoints
+  - source and target databases
+  - one endpoint must be on AWS
+
+- supports common db engines. see slide
+- inside of DMS you define replication tasks
+- 3 job types
+  - full load - one migration of all data
+  - full load + CDC - change data capture for ongoing replication which captures changes
+  - CDC - if you want to use alt method to xfer the bulk DB data - vendor provided tool
+- can u se schema conversion tool(SCT) can assist with schema conversion
+
+- slides
+  - ![rds DMS notes](img/rdsDMSnotes.png)
+  - ![rds DMS arch](img/rdsDMSarch.png)
