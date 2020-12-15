@@ -411,3 +411,6 @@ exam power ups
 ## Database Migration Service (DMS)
 
 #
+
+- managed service which allows for 0 data loss, low or 0 downtime migrations between 2 database endpoints
+- service is capable of moving databases in or out of AWS
