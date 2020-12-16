@@ -34,6 +34,45 @@
 
 #
 
+- Summary:
+
+  - lesson steps through architecture of ALB
+  - talks about Target Groups, connection architecture, and how ALB achieves HA and Scaling
+
+- concepts:
+
+  - ALB is a layer 7 LB - understands HTTP/S
+  - scalable and highly available
+  - internet facing or internal
+    - depends if nodes have public IP or not
+  - sits inbetween client and server
+    - listens on the outside - sends to Targets(aka groups)
+  - billing:
+    - bills on hourly rate and LCU rate(capacity)
+    - ![ALB concepts](img/HAalbconcepts.png)
+
+- architecture:
+
+  - each AZ in a VPC gets a lb node
+  - client sends request to lb
+  - uses cross zone load balancing to distribute load evenly among all AZs
+    - ![HA lb arch](img/HAlbarch.png)
+  - performs health checks
+    - ![health checks](img/HAalbhealth.png)
+  - target and groups:
+    - where the load is going from the lb is a target
+      - can be multiple things, ec2 instances, lambdas, etc
+      - can be grouped together
+    - ![HA alt target groups and paths](img/HAalbtargets.png)
+
+- exam power ups:
+  - targets are ec instances, lambda functions, containers
+  - rules are path based or host based
+  - supports ec2, ecs, eks, lambda, http/s/2,
+  - alb can use SNI for multi SSL certs
+  - albs are recommended vs clb(legacy classic lbs)
+    - ![Ha Alb exam pu](img/HAalbexam.png)
+
 ## 3. Launch Configuration and Templates
 
 #
