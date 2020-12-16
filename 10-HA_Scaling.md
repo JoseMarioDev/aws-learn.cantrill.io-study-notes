@@ -1,29 +1,23 @@
-### Load Balancing Fundamentals
+## 1. Load Balancing Fundamentals
 
-- content
-  - subcontent
+#
 
-### Application Load Balancing (ALB)
+## 2. Application Load Balancing (ALB)
 
-- content
-  - subcontent
+#
 
-### Launch Configuration and Templates
+## 3. Launch Configuration and Templates
 
-- content
-  - subcontent
+#
 
-### Auto-Scaling Groups
+## 4. Auto-Scaling Groups
 
-- content
-  - subcontent
+#
 
-### Network Load Balancing (NLB)
+## 5. Network Load Balancing (NLB)
 
-- content
-  - subcontent
+#
 
-### SSL Offload & Session Stickiness
+## 6. SSL Offload & Session Stickiness
 
-- content
-  - subcontent
+#
