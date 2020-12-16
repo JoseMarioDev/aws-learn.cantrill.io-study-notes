@@ -30,6 +30,7 @@
   - 2 storage classes: infrequent access and standard
   - can use lifecycle policies
   - ![efs lifecycle exam notes](img/efslifecycle.png)
+- Next 3 lessons are demos, then topic is completed, shorter topic
 
 ## Demos
 
