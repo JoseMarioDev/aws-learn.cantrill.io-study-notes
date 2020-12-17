@@ -104,6 +104,61 @@
 
 #
 
+- summary:
+
+  - is how Scaling and self-healing can be implemented within AWS using EC2
+  - ASGs use LT and LC to control **WHAT** gets launched, and provide various types of scaling policy to scale out and in based on metrics
+
+- concepts:
+
+  - do one thing: provide auto scaling and self healing for EC2
+  - make use of configurations defined in LT or LC
+  - 3 super important values
+    - min size
+    - desired capacity
+    - max size
+  - provisions or terminates instances to keep at desired level (between min/max)
+  - can be performed manually or uses Scaling Policies based on metrics
+  - ![ASG concepts](img/HAasgconcepts.png)
+
+- architecture:
+
+  - ASG run inside a VPC across 1/more subnets
+  - config provided by LT or LC
+  - based on desired capacity and min/max.
+  - can used scaling polices or increase manually
+  - ASGs are linked to VPC where instances are launched
+  - attempts to keep each subnet even
+    - ![ASG arch](img/HAasgarch.png)
+    - ![ASG vpc arch](img/HAasgarchvpc.png)
+
+- scaling policies
+
+  - essentially rules you define to adjust values in ASG
+  - 3 ways to scale:
+    - 1. manually
+    - 2. scheduled scaling - see slide
+    - 3. dynamic scaling - simple(action based on metric),stepped(more extreme way), target tracking (define ideal amt)
+  - cooldown periods - controls how long to wait before performing another scaling action
+    - ![scaling policies concepts](img/HAscalingpol.png)
+
+- self healing
+  - ASG checks health, if an instance is down, it replaces it automatically
+- integration w/load balancers
+  - example:
+    - user connects to blog via lb. points to target group. use an ASG inside target group
+    - see slide. example of elasticity
+    - can use ASG health checks for better results
+    - ![ex of how ASG work with LB for elasticity](img/HAasglbarch.png)
+- final points:
+  - ASGs are free
+  - only the resources created are billed
+  - use cool downs to avoid rapid scaling and high billing
+  - think about more, smaller instances - granularity
+  - use with ALBs for elasticity - abstraction
+  - ASG defines when and where LT/LC define what
+    - ![final points](img/HAasgfinalpoints.png)
+
 ## 5. Network Load Balancing (NLB)
 
 #
