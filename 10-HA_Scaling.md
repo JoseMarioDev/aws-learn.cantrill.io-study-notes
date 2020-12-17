@@ -165,7 +165,9 @@
   - Elastic Cat Blog - part 1 - launch template
   - Elastic Cat Blog - part 2 - Autoscaling group
   - Elastic Cat Blog - part 3 - Load Balancer
-  ## 5. Network Load Balancing (NLB)
+  - ![demo architecture cat blog elastic](img/HAelasticblogarc.png)
+
+## 5. Network Load Balancing (NLB)
 
 #
 
