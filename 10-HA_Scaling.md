@@ -77,6 +77,29 @@
 
 #
 
+- summary:
+
+  - launch configurations and templates provide the **what** to auto scaling groups
+  - define what gets provisioned
+    - the AMI
+    - instance type
+    - networking & security
+    - key pair to use
+    - user data to interject
+    - IAM role to attach
+
+- concepts:
+  - allow to define config of ec2 instance in advance
+  - AMI, instance type, storage, key pair
+  - networking, sec group
+  - user data and IAM role
+  - both are not editable. defined once LT has versions
+  - LT has newer features - see slide
+  - ![launch config and template concepts](img/HAlaunchconfig.png)
+- architecture:
+  - launch configs are not editable
+  - templates are, are recommended by AWS are newer -![launch config and template arch](img/HAlauncharch.png)
+
 ## 4. Auto-Scaling Groups
 
 #
