@@ -151,6 +151,7 @@
     - can use ASG health checks for better results
     - ![ex of how ASG work with LB for elasticity](img/HAasglbarch.png)
 - final points:
+
   - ASGs are free
   - only the resources created are billed
   - use cool downs to avoid rapid scaling and high billing
@@ -159,7 +160,12 @@
   - ASG defines when and where LT/LC define what
     - ![final points](img/HAasgfinalpoints.png)
 
-## 5. Network Load Balancing (NLB)
+- next four lessons are demos:
+  - Elastic Cat Blog - Architecture
+  - Elastic Cat Blog - part 1 - launch template
+  - Elastic Cat Blog - part 2 - Autoscaling group
+  - Elastic Cat Blog - part 3 - Load Balancer
+  ## 5. Network Load Balancing (NLB)
 
 #
 
