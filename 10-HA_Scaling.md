@@ -194,3 +194,46 @@
 ## 6. SSL Offload & Session Stickiness
 
 #
+
+- summary:
+
+  - 3 diff ways that ELBs handle SSL
+    - SSL bridging
+    - SSL Pass Through
+    - SSL Offloading
+  - lesson also covers what session stickiness means, and why it matters to SAs
+
+- concepts:
+
+  - need to know theory and architecture for exam
+  - each of the 3 ways come w/pros and cons
+
+    - 1. bridging:
+      - default of ELB
+      - listener uses HTTPS, connection is terminated on the ELB, needs a certificate for that domain
+      - means AWS has some level of access to that cert
+    - ELB then makes connections to the backend
+    - HTTPS is is just HTTP in a secure wrapper
+    - ELB then unecrypts data, interprets it, re-encrpyts it, sends to EC2 instances.
+    - EC2 instances also need the SSL cert
+    - 2. Pass-Through
+      - client connects, but the ELB just passes connection along to the backend instances
+      - ELB doesnt need cert, but the instances do
+      - is a NLB, is configured to listen for TCP
+      - pros: aws doesnt see the cert cons: no load balancing based on application http
+    - 3. offload
+      - ELB needs certificate, but the ELB is configured to connect to backend using http. EC2 instances don't need cert
+    - ![HA ssl offloading arch](img/HAssloffload.png)
+
+  - stickiness:
+    - with no stickiness, ELB distributes connections evenly among all instances
+    - problem is when application has state, like shopping carts
+    - enable stickiness on a target group
+      - elb generates a cookie called awsalb
+      - you determine life of cookie
+      - sessions are sent to the same instance because of cookie
+      - happens until either server failure or cookie expires
+      - user receives new cookie and new connection to an instance
+      - session stickiness is allowed to use a load balancer if the state of the user session is stored on an individual server
+      - con: can cause uneven loading
+      - applications should be allowed stateless servers. sessions should be hold elsewhere like on dynamodb -![HA stickiness arch](img/HAstickiness.png)
