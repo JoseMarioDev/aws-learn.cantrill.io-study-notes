@@ -171,6 +171,26 @@
 
 #
 
+- summary:
+  - lesson steps through differences between ALB and NLB
+    - focusing on situations where you would pick NLB vs ALB
+    - no implementation knowledge for exam
+    - brief lesson
+- concepts:
+
+  - are layer 4 load balancers
+    - understand up to TCP and UDP
+  - can't understand HTTP/S but is faster for application load balancers
+  - can load balance network connection part
+  - highest performance of load balancing family
+    - for exam, if performance is priority
+  - 1 interface w/static ip per AZ can use Elastic IPs(whitelisting)
+  - can do SSL pass through
+  - can load balance non HTTP/S applications - doesnt care about anything above TCP/UDP
+
+- slide:
+  - ![nlb concepts](img/HAnlbconcepts.png)
+
 ## 6. SSL Offload & Session Stickiness
 
 #
