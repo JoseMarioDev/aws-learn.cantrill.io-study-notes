@@ -1,49 +1,159 @@
-### Architecture Evolution - Part 1 - Monolithic and Tiered
+## 1. Architecture Evolution - Part 1 - Monolithic and Tiered
 
-- content
-  - subcontent
+#
 
-### Architecture Evolution - Part 2 - Queue Based, Microservice & Event Driven
+### summary
 
-- content
-  - subcontent
+-
 
-### AWS Lambda
+### concepts
 
-- content
-  - subcontent
+-
 
-### CloudWatchEvents and EventBridge
+### architecture
 
-- content
-  - subcontent
+-
 
-### API Gateway
+## 2. Architecture Evolution - Part 2 - Queue Based, Microservice & Event Driven
 
-- content
-  - subcontent
+#
 
-### Serverless Architecture
+### summary
 
-- content
-  - subcontent
+-
 
-### Simple Notification Service
+### concepts
 
-- content
-  - subcontent
+-
 
-### Step Functions
+### architecture
 
-- content
-  - subcontent
+-
 
-### Simple Queue Service
+## 3. AWS Lambda
 
-- content
-  - subcontent
+#
 
-### Kinesis & Kinesis Firehouse
+### summary
 
-- content
-  - subcontent
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 4. CloudWatchEvents and EventBridge
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 5. API Gateway
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 6. Serverless Architecture
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 7. Simple Notification Service
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 8. Step Functions
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 9. Simple Queue Service
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
+
+## 10. Kinesis & Kinesis Firehouse
+
+#
+
+### summary
+
+-
+
+### concepts
+
+-
+
+### architecture
+
+-
