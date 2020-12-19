@@ -19,10 +19,6 @@
   - cons: each tier is still dependent on each other so can't scale to zero and could still fail
   - ![tiered arch](img/serverlesstieredarch.png)
 
-### architecture
-
--
-
 ## 2. Architecture Evolution - Part 2 - Queue Based, Microservice & Event Driven
 
 #
