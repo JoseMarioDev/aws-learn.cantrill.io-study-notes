@@ -25,15 +25,30 @@
 
 ### summary
 
--
+- part 2 looks at the evolution of architecture - queue based design, microservices, event driven architecture
 
 ### concepts
 
--
+- queue
+
+  - similar to CS. FIFO
+  - uses async communications, doesn't depend on another tier. decoupled. think cattube s3 bucket from slide
+  - ![queue arch](img/serverlessqueuearch.png)
+
+- microservice and event driven architecture
+  - do individual things well
+  - a microservice is just a tiny self sufficient application
+  - producers are triggered by events, consumers take from producers
+  - events are generated when something happens
+  - event routers handle events between producers/consumers via event bus
+  - event driven architures only consume resources when required
+  - ![event driven concepts](img/serverlesseventconcepts.png)
 
 ### architecture
 
--
+- slides
+  - ![microservices arch](img/serverlessmicroarch.png)
+  - ![event driven arch](img/serverlesseventarch.png)
 
 ## 3. AWS Lambda
 
