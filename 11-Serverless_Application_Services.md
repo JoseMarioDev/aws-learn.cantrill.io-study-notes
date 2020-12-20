@@ -56,15 +56,48 @@
 
 ### summary
 
--
+- AWS Lambda is a FaaS(function as a service) provides ability to execute small lambda functions and pay for only the execution duration
+- can be invoked manually scheduled in an event-driven way
 
 ### concepts
 
--
+- is a FaaS product
+- can be event driven invocation(execution)
+- is a piece of code in one language
+- Lambda functions use a runtime(eg Python 3.6)
+- runs inside of a runtime environment
+- you are only billed for the duration the function runs for
+- key component of serverless architecture
+- ![serverless lambda concepts](img/serverlesslambdaconcepts.png)
 
 ### architecture
 
--
+- when creating a Lambda function you create a container sortaof
+- it's a piece of code that does something
+- s/b super specialized
+- various languages
+- runs in a runtime environment
+- you allocate memory/cpu more you allocate more expensive
+- can be configured to use IAM role known as execution role
+- can be invoked manually or event-driven
+- when it's invoked, it's downloaded on to AWS hardware
+- the environment it runs in is new and clean (stateless). do not store anything in it
+- are public services, have access to internet
+- can be configured to run inside a VPC, but will only have internet access if the VPC is configured for internet access
+- since Lambda functions are stateless, they get data from internet or AWS resources. needs to have appropriate permissions from execution role to input/output to those resources
+- Lambda functions have a 15 minute execution limit
+- cheaper than running EC2, especially for things which don't need to run all the time.
+- ![lambda function architecture](img/serverlesslambdaarch.png)
+
+### Key considerations
+
+- currently 15 minute execution limit
+- new runtime env every execution no data persistence
+- execution roles provides permissions
+- load data to/from other services (eg S3, DynamoDB)
+- free tier
+  - 1M free requests and 400,000 GB-seconds of compute time per month
+- ![key considerations](img/serverlesslambdaconsiderations.png)
 
 ## 4. CloudWatchEvents and EventBridge
 
