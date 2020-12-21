@@ -144,7 +144,10 @@
 
 ### summary
 
--
+- is a managed service from AWS which allows the creation of endpoints, resources, & methods
+- API Gateway intergrates w/other AWS services - and can even access some without the need for dedicated compute
+- serves as a core component of many serverless architectures using Lambda as even-driven and on-demanding backing for methods
+- can also connnect legacy monolithic applications and act as a stable API endpoint during an evolution from a monolith to microservices and potentially through to serverless
 
 ### concepts
 
