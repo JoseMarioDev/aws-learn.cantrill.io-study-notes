@@ -99,14 +99,6 @@
   - 1M free requests and 400,000 GB-seconds of compute time per month
 - ![key considerations](img/serverlesslambdaconsiderations.png)
 
-### next lessons
-
-- next 2 lessons are demos
-  - Automated EC2 start/stop and protect using Lambda and events part 1
-    - manual invocation
-  - Automated EC2 start/stop and protect using Lambda and events part 2
-    - event-driven invocation
-
 ## 4. CloudWatchEvents and EventBridge
 
 #
@@ -137,6 +129,14 @@
 - delivers events to targets
 - events themselves are JSON objects
 - ![eventbridge arch](img/serverlesseventbridgearch.png)
+
+### next lessons
+
+- next 2 lessons are demos
+  - Automated EC2 start/stop and protect using Lambda and events part 1
+    - manual invocation
+  - Automated EC2 start/stop and protect using Lambda and events part 2
+    - event-driven invocation
 
 ## 5. API Gateway
 
