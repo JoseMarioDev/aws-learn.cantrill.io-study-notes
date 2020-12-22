@@ -41,7 +41,7 @@
   - producers are triggered by events, consumers take from producers
   - events are generated when something happens
   - event routers handle events between producers/consumers via event bus
-  - event driven architures only consume resources when required
+  - event driven architectures only consume resources when required
   - ![event driven concepts](img/serverlesseventconcepts.png)
 
 ### architecture
