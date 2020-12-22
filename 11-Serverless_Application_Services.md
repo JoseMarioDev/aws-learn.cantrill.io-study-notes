@@ -148,14 +148,26 @@
 - API Gateway intergrates w/other AWS services - and can even access some without the need for dedicated compute
 - serves as a core component of many serverless architectures using Lambda as even-driven and on-demanding backing for methods
 - can also connnect legacy monolithic applications and act as a stable API endpoint during an evolution from a monolith to microservices and potentially through to serverless
+- APIs are basically code on a server which provide interfaces to a particular service
+- most cases perform authentication and authorization
+- ![general API concepts/ach](img/serverlessAPIconcepts.png)
 
 ### concepts
 
--
+- API Gateway is a managed service provides managed API endpoints you can present to your customers so they can use it
+- create publish monitor secure APIs as a service
+- billed on num of API calls, Data Transfers, and features such as caching
+- can be used directly for serverless architecture
+- can be used to xfer legacy systems that host their own APIs
+- ![serverless API GW concepts](img/serverlessAPIGWconcepts.png)
 
 ### architecture
 
--
+- is HA and scalable. can use "inbetween" legacy app and monolithic architecture. see slide
+- can be part of evolution to microservices architecture, while keeping same endpoints
+- or could move to serverless architecture. see slide
+- has direct access to some AWS services (think dynamoDB) see slide
+- ![API GW arch](img/serverlessAPIGWarch.png)
 
 ## 6. Serverless Architecture
 
