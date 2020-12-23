@@ -175,15 +175,35 @@
 
 ### summary
 
--
+- Serverless architecture is an evolution/combination of other popular architectures such as event driven and microservices
+- uses 3rd party services where possible anf FAAS products for any on-demand computing needs
+- using serverless architecture means little to no base costs for an environment. any costs incurred during operations scale in a way with matches the incoming load
+- Serverless is starting to feature more on the exam - critical to understand
 
 ### concepts
 
--
+- Serverless isn't one thing - more of software arch than hardware arch
+- aim to manage few, if any servers - low overhead
+- borrows concepts from microarchitectrue
+- applications are a collection of small & specialized functions
+- applications run in a stateless and ephemeral environments - duration billing
+- everything is event-driven. consumption only when being used
+- FaaS is used where possible for compute functionality. Function as a Service
+- should use managed services when possible
+- ![serverless arch concepts](img/serverlessarchconcepts.png)
 
 ### architecture
 
--
+- no servers or EC2 instances
+- ex: user connects to website hosted on S3
+  - app uses 3rd part for auth
+  - app uses AWS Cognito to issue temp AWS creds
+  - user uploads file to original bucket
+  - bucket generates an event to Lambda function to process file
+  - uses manages service to process job. Elastic transoder example in slide
+  - xfers files to a managed db - DynamoDB
+  - lastly, users clicks on link, targets another Lambda function. loads files from dynamodb and renders files to user
+  - ![ex of serverless arch app](img/serverlessarchexample.png)
 
 ## 7. Simple Notification Service
 
