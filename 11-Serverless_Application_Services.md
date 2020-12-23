@@ -211,7 +211,11 @@
 
 ### summary
 
--
+- SNS is a pub sub style notification system used in AWS products and services
+- can be essential part of serverless, event driven and traditional application architectures
+- publishers send messages to topics
+- subscribers receive messages sent to topics
+- SNS supports a wide variety of subscriber types including other AWS services such as Lambda and SQS
 
 ### concepts
 
