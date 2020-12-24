@@ -231,7 +231,7 @@
 
 ### summary
 
--
+- step functions is a product which lets you build long running serverless workflow based applications within AWS which integrate with many AWS services
 
 ### concepts
 
