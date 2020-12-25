@@ -219,11 +219,38 @@
 
 ### concepts
 
--
+- public AWS service - network connectivity with public endpoint
+- coordinates the sending and delivery of messages
+- messages are up to 256kb payloads
+- not designed for large binary files
+- SNS topics base entity of SNS - permissons and configurations
+- A publisher sends messages to a Topic
+- Topics have subscribers which receives messages
+  - topics could be http(s), email, SQS, mobile push, SMS messages, Lambda
+- used across multiple AWS services
+- ![SNS concepts](img/serverlessSNSconcepts.png)
 
 ### architecture
 
+- public space AWS service
+- can be accessed from internet assuming permissions
+- runs from public zone, topics created inside
+- services publish messages into a topic
+- topic sends to subscribers
+- can setup filter
+- use Fanout to send a topic to mulitple queues using SQA queues?
+  \_ ![SNS achitecture](img/serverlessSNSarchitecture.png)
 -
+
+### Functionality
+
+- offers delivery status
+  - ex: HTTP, Lambda, SQS
+- delivery retries
+- HA and Scalable (regional resilient)
+- server side encryption (SSE)
+- cross account via Topic Policy
+- ![SNS functionality](img/serverlessSNSfunctionality.png)
 
 ## 8. Step Functions
 
