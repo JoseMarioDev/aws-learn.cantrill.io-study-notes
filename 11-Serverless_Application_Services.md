@@ -271,7 +271,7 @@
 ### Demos
 
 - next 5 lessons are demos:
-  1. Pet cuddle-0=o-tron serverless application part 1
+  1. Pet cuddle-o-tron serverless application part 1
   2. part 2
   3. part 3
   4. part 4
