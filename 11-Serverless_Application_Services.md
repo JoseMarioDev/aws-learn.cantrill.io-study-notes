@@ -271,6 +271,9 @@
 ### Demos
 
 - next 5 lessons are demos:
+- implementing a serverless application using Step Functions, Lambda, SNS, SES, API Gateway and S3 static web hosting.
+- application will be serverless and event driven and use no base long running compute while inactive. Resources will only be consumed when the application is dealing with user created events
+
   1. Pet cuddle-o-tron serverless application part 1
   2. part 2
   3. part 3
