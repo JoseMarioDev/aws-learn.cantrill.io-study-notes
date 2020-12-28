@@ -275,10 +275,24 @@
 - application will be serverless and event driven and use no base long running compute while inactive. Resources will only be consumed when the application is dealing with user created events
 
   1. Pet cuddle-o-tron serverless application part 1
+
+  - configure SES
+
   2. part 2
+
+  - add Lambda function to send email on behalf of the state machine
+
   3. part 3
+
+  - implement the state machine itself and configure it's integration
+
   4. part 4
+
+  - implement and config the API, resource, method and it's supporting Lambda function
+
   5. part 5
+
+  - implement the static client application and perform some testing
 
 ## 9. Simple Queue Service
 
