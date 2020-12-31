@@ -319,6 +319,11 @@
   3. part 3
 
   - implement the state machine itself and configure it's integration
+  - state machine manages flow of application
+    - three steps
+      - create role state machine will use
+      - create state machine
+      - config
 
   4. part 4
 
