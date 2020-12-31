@@ -270,6 +270,19 @@
   - gets messy at scale
   - runtime environments are stateless
   - ![lambda limitations](img/serverlessLambdalimitations.png)
+- State Machines
+  - step functions create state machines
+  - serverless workflows start -> states -> end
+  - states are things which occur
+  - maximum duration is 1 year
+  - two workflows - standard workflow and express workflow
+    - for the exam, remember standard is the default, 1 year duration
+    - express for things that are transactional
+  - started via API Gateway, IOT rules, EventBridge, Lambda
+  - generally used for BE processing
+  - can use templates - Amazon States Language (ASL) Json template
+  - uses IAM roles for permissions
+  - ![state machines concepts](img/serverlessstatemachineconcepts.png)
 
 ### architecture
 
