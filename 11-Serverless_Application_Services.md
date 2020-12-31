@@ -262,7 +262,14 @@
 
 ### concepts
 
--
+- addresses limitations of Lambda
+  - Lambda is a FaaS
+  - specialized functions do one thing well
+  - duration limit of 15 minutes
+  - could in theory chain Lambda functions
+  - gets messy at scale
+  - runtime environments are stateless
+  - ![lambda limitations](img/serverlessLambdalimitations.png)
 
 ### architecture
 
