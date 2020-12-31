@@ -310,11 +310,11 @@
 
   - configure SES - Simple Email Service
     - managed service that lets you send email
-    
 
   2. part 2
 
   - add Lambda function to send email on behalf of the state machine
+  - imported code from github repo and created Lambda function. replaced from email w/my email address
 
   3. part 3
 
