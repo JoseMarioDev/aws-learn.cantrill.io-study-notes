@@ -269,7 +269,6 @@
   - could in theory chain Lambda functions
   - gets messy at scale
   - runtime environments are stateless
-  - ![lambda limitations](img/serverlessLambdalimitations.png)
 - State Machines
   - step functions create state machines
   - serverless workflows start -> states -> end
@@ -283,10 +282,23 @@
   - can use templates - Amazon States Language (ASL) Json template
   - uses IAM roles for permissions
   - ![state machines concepts](img/serverlessstatemachineconcepts.png)
+- States
+  - states are things inside workflow - things which occur
+    - types of state:
+      - succeed/fail
+      - wait
+      - choice
+      - parallel
+      - map
+      - Task - unit of work performed by state machine. can be integrted w/diff services
+        state machine controls flow through state machine, uses task states to coordinate actual work
+      - ![lambda states](img/serverlesslambdastates.png)
 
 ### architecture
 
--
+- ex: bob creates an app to cuddle whiskers. whiskers sends bob a reminder when he wants cuddles -> see diagram
+- in summary: step functions create state machines. state machines are long running serverless workflows that have states. states are decision points or tasks that perform things
+- ![state machine arch](img/serverlessstatemachinearch.png)
 
 ### Demos
 
