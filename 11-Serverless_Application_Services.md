@@ -308,7 +308,9 @@
 
   1. Pet cuddle-o-tron serverless application part 1
 
-  - configure SES
+  - configure SES - Simple Email Service
+    - managed service that lets you send email
+    
 
   2. part 2
 
