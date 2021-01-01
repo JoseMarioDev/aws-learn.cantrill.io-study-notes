@@ -404,7 +404,26 @@
 - multiple consumers access data from that moving window
 - ![kinesis concepts](img/serverlessKinesisconcepts.png)
 
-
 ### architecture
 
--
+- producers - ex: s3 buckets, servers, etc
+- consumers- ec2 instances, lambda functions, severs, etc
+- in the middle is kinesis stream
+- producers send data to stream, consumers pull from stream
+- uses shards?
+- window can be increased from 24hr to 7 days for addtl cost
+- data stored via kinesis data records
+- firehose connects to stream
+- can connect data from stream to AWS service like S3
+- ![kinesis/firehose arch](img/serverlessKinesisarch.png)
+
+### kinesis vs SQS
+
+- SQS generally 1 production group, 1 consumption group
+- worker pools, decoupling -> SQS
+- ingesting data -> kinesis
+- SQS - no persistance
+- kinesis - huge scale ingestion of data
+- designed for multiple consumers....rolling window
+- data ingestion, monitoring, analytics, streaming
+- ![kinesis vs SQS](img/serverlessKinesisdifferences.png)
