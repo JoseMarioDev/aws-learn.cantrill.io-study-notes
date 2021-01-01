@@ -329,6 +329,8 @@
 
   - implement and config the API, resource, method and it's supporting Lambda function
   - doing 2 things. creating the Lambda function and setting up the API
+  - used Lambda to create function that handles logic for where to end email
+  - used API Gateway to create an endpoint/api for our app to hit
 
   5. part 5
 
