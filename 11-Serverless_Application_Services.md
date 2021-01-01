@@ -328,6 +328,7 @@
   4. part 4
 
   - implement and config the API, resource, method and it's supporting Lambda function
+  - doing 2 things. creating the Lambda function and setting up the API
 
   5. part 5
 
