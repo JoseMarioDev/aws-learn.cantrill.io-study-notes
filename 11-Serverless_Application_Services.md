@@ -387,7 +387,10 @@
 
 ### summary
 
--
+- kinesis data streams are a streaming service within AWS designed to ingest large quantities of data and allow access to that data for consumers
+- ideal for dashboards and large scale real time analytics
+- kinesis data firehose allows the long term persistent storage of kinesis data onto services like S3
+- lesson evaluates the diff between SQS vs Kinesis and ids key factors in exam questions for picking one vs the other
 
 ### concepts
 
