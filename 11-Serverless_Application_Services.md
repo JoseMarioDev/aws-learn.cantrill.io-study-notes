@@ -349,11 +349,37 @@
 
 ### concepts
 
--
+- managed message queues. public. fully managed. standard or FIFO
+- msgs size up to 256kb in size. you can link(S3) to larger data
+- received msgs are hidden - visabilityTimeout
+- after visabilityTimeout, msg either reappears or are explicitly deleted
+- Dead-Letter queue used for problem msgs
+- ASGs can scale and Lambda can invoke functions based on queue length
+- ![SQS concepts](img/serverlessSQSconcepts.png)
 
 ### architecture
 
--
+- 2 ASG groups - 2 pools
+- one pool accepts vid, stores in S3 bucket. sends msg to Queue
+- pool autoscales based on cpu usuage
+- Queue sends msg to worker pool. worker pool transcodes video after retrieving vid from S3 bucket.
+- it scales based on length of queue
+- ![SQS queue arch](img/serverlessSQSarch.png)
+- ![advanced arch using fanout](img/serverlessSQSarchadvanced.png)
+
+### wrapup
+
+- think of standard - at least one delivery, no guarantee of order(multi lane hwy)
+- think of FIFO - exactly one delivery(single lane hwy)
+- FIFO - performance limitations - see slide
+- standard scale better
+- billed on requests
+- less efficient and less cost effective
+- 2 ways to poll - short vs long
+- should use long polling - uses less requests
+- supports encryption at rest KMS and in transit
+- can use identity policies or Queue policies
+- ![SQS wrapup notes](img/serverlessSQSwrapup.png)
 
 ## 10. Kinesis & Kinesis Firehouse
 
