@@ -344,7 +344,8 @@
 
 ### summary
 
--
+- SQS is a manged message queue service in AWS which helps decouple application components
+- allows asynchronous messaging or the implementation of worker pools
 
 ### concepts
 
