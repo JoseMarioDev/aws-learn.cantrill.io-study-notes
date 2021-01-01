@@ -394,7 +394,16 @@
 
 ### concepts
 
--
+- is confused w/SQS
+- kinesis is a scalable streaming service
+- producers send data into a kinesis stream
+  = can scale from low to ner infinite data rates
+- public service and HA by design
+- stream store a rolling 24hr window of data
+- storage is included
+- multiple consumers access data from that moving window
+- ![kinesis concepts](img/serverlessKinesisconcepts.png)
+
 
 ### architecture
 
