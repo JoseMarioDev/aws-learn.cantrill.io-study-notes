@@ -335,6 +335,8 @@
   5. part 5
 
   - implement the static client application and perform some testing
+  - client side is a static website hosted on S3 bucket
+  - will edit client files to point to API created via Gateway
 
 ## 9. Simple Queue Service
 
