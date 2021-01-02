@@ -25,6 +25,24 @@
 
 ### architecture
 
+- bob uploads data to bucket, sets config in a distribution that points to bucket as origin.
+- edge locations cache content, are globally distributed.
+- each distribution as a domain name
+- you config each distribution and deploy it to the edge locations
+- in middle, are the regional edge locations. support multiple edges in same location area
+- if data isnt in edge location, it checks the regional edge. see slide
+- integrates w/ACM to add HTTPS availability
+- caching is only for GETS. PUTS go directly to origin, no right caching. know for exam
+- ![cfn arch basics w/regional edges](img/cfnarch.png)
+
+### caching optimization
+
+- when caching object, you also cache any query string parameters
+- to get cached copy, you need to also cache the query string
+- be careful when using query string parameters. i.e. order_id
+- option Forward to Origin - YES or NO
+- ![cfn optimization and query strings](img/cfnoptimization.png)
+
 ## 2. ACM
 
 #
