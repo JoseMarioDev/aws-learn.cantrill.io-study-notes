@@ -9,6 +9,20 @@
 
 ### concepts
 
+- cloudfront is a global object cache(CDN)
+- content is cached in locations close to customers
+- lower latency and higher throughput
+- can handle static and dynamic content
+- ![cfn basics](img/cfnconcepts.png)
+
+### terms
+
+- origin - source location of your content
+- distribution - the configuration unit of cloudfront
+- edge location - local infrastructure whic hosts a cache of your data
+- regional edge cache - larger version of edge location. provides another layer of caching
+- ![cfn terms](img/cfnterms.png)
+
 ### architecture
 
 ## 2. ACM
