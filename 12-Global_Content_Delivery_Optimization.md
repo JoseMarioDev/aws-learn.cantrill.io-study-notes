@@ -118,6 +118,8 @@
 
 #
 
+- this demo you implment bucket protection in S3 using OAI to restrict access to an S3 bucket to only a cloudfront distribution
+
 ## 4. Lambda@Edge
 
 #
