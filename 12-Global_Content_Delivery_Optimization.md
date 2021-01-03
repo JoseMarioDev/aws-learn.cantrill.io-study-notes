@@ -54,7 +54,24 @@
 
 ### concepts
 
+- for exam, only need to know the public cert part
+- handles encryption and handle identity
+- HTTP Simple and Insecure
+- HTTPS - SSL/TLS layer of encryption added to HTTP
+  - creates a secure tunnel where HTTP travels in
+  - secure in transit
+- data is encrypted in transit
+- certificate prove identity
+- signed by a trusted authority
+- supported AWS services only eg CloudFront and ALBs NOT EC2
+- ![cert mgr concepts](img/cfncertmgr.png)
+
 ### architecture
+
+- use ACM to create cedrt
+- created a cloudfront distribution using ALB
+- customers communicate w/edge location use https and edge communicates w/origins using https(not self signed)
+- ![cert mgr arch](img/cfncertmgrarch.png)
 
 ## Demos
 
