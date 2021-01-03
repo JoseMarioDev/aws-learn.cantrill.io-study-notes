@@ -100,12 +100,19 @@
 ### summary
 
 - OAI - origin access identities is a feature where virtual identities can be created, associated with a cloudfront distribution and deployed to edge locations
-- access to an S3 bucket can be controlled by using OAIs - allowing access from an OAI, and using an implicity DENY for everything else
+- access to an S3 bucket can be controlled by using OAIs - allowing access from an OAI, and using an implicitly DENY for everything else
 - OAIs are generally used to ensure no direct access to S3 objects is allowed when using private CF distributions
 
 ### concepts
 
+- create OAI associate it w/distribution
+- policy on S3 bucket - allow for OAI, everything else implicitly deny. remove all allows
+- only things associated w/OAI can access bucket. the edges. no individuals directly. see slide
+- distributions can be set to private, but you still need to restrict access to S3 buckets. a user can still access an S3 bucket if permissions are not setup correctly
+
 ### architecture
+
+- ![arch of OAI distribution](img/cfnOAI.png)
 
 ## Demo
 
