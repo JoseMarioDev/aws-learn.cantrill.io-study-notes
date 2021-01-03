@@ -81,6 +81,8 @@
 
 1. adding a CDN to a static website using S3 and Cloudfront part 1
 
+- create S3 bucket, add content, make avail globally using CFN
+
 2. Adding a CDN to a static website using S3 and Cloudfront part 2
 
 ## 3. Securing CF and S3 using OAI
