@@ -77,13 +77,21 @@
 
 #
 
-2 part demo
+2 demos:
 
-1. adding a CDN to a static website using S3 and Cloudfront part 1
+1. first demo is 2 parts:
 
-- create S3 bucket, add content, make avail globally using CFN
+- 1. adding a CDN to a static website using S3 and Cloudfront part 1
 
-2. Adding a CDN to a static website using S3 and Cloudfront part 2
+  - create S3 bucket, add content, make avail globally using CFN
+
+- 2.  Adding a CDN to a static website using S3 and Cloudfront part 2
+
+  - continuation of first video. finishing up setting up distribution
+
+2. second demo:
+
+- adding a custom domain and HTTPS to a cloudfront distribution using ACM
 
 ## 3. Securing CF and S3 using OAI
 
