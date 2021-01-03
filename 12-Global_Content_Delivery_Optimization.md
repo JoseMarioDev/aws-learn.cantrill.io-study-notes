@@ -68,7 +68,7 @@
 
 ### architecture
 
-- use ACM to create cedrt
+- use ACM to create cert
 - created a cloudfront distribution using ALB
 - customers communicate w/edge location use https and edge communicates w/origins using https(not self signed)
 - ![cert mgr arch](img/cfncertmgrarch.png)
@@ -77,7 +77,11 @@
 
 #
 
-#
+2 part demo
+
+1. adding a CDN to a static website using S3 and Cloudfront part 1
+
+2. Adding a CDN to a static website using S3 and Cloudfront part 2
 
 ## 3. Securing CF and S3 using OAI
 
