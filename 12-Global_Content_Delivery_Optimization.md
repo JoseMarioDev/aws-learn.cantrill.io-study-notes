@@ -49,6 +49,9 @@
 
 ### summary
 
+- AWS certificate manager is a service which allows the creation, management, and renewal of certs
+- allows deployment of certs onto supported AWS services such as Cloudfront and ALB
+
 ### concepts
 
 ### architecture
