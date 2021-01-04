@@ -46,7 +46,18 @@
 
 ### concepts
 
+- IG that only allows connections from inside to outside
+- w/IPv4 addresses are private/public
+- NAT allows private IPs to access public networks
+- without allowing externally initiated connections(in)
+- with IPv6 all IPs are public
+- IG(IPv6) allows all IPs in and out
+- NAT doesn't work with IPv6, that why we have egress-only IG
+- ![egress only IG concepts](img/advVPCegressconcepts.png)
+
 ### architecture
+
+- ![egress arch](img/advVPCegressarch.png)
 
 ## 3. VPC Endpoints (Gateway)
 
