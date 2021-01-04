@@ -164,6 +164,21 @@
 
 ### summary
 
+- designed to improve global network performance by offering entry point onto the global AWS transit network as close to customers as possible using ANycast IP addresses
+
 ### concepts
 
-### architecture
+- optimize flow of data from user to AWS infrastructure
+- arch is similar to cloudfront
+- both improve performance in diff ways and diff reasons
+- anycast ip addresses can be used my multiple devices
+- user connects to a global edge using an anycast address, the global accelerator then xfers data to the endpoint using AWS backbone. see slide
+- very much like cloudfront
+- connects enter at edge using anycast IPs
+- traffic transits over AWS backbones to 1+ locations
+- global accelerator is a network products. can be used for non HTTP/S. diff from cloudfront
+- ![GA concepts](img/cfnGAconcepts.png)
+
+- ### architecture
+- for exam, just understand arch and how it works
+- ![arch for GA](img/cfnGAarch.png)
