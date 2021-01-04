@@ -133,7 +133,7 @@
 ### concepts
 
 - run lightweight lambda functions at edge locations
-- adjust data between viewer and orgigin
+- adjust data between viewer and origin
 - limitations - currently support NodeJS and Python
 - run in the AWS public space - not VPC
 - layers are not supported(?)
@@ -141,6 +141,22 @@
 - ![lambda edge concepts](img/cfnlambdaedgeconcepts.png)
 
 ### architecture
+
+- cloundfront architecture is same
+- 4 components of architecture
+  - view request -> origin request -> origin response -> viewer response
+- you can run a lambda function at each component. see slide
+- there are memory limits, see slide
+- ![lambda edge arch](img/cfnlambdaedgearch.png)
+
+### use cases
+
+- A/B testing - viewer request testing
+- migration between S3 origins - origin request
+- different objects based on device - origin request- diff sizes, diff quality levels
+- content by country - origin request
+- link in lesson gives examples - aws docs. outside of course scope. only need to know architecture for exam
+- ![lambda edge use cases](img/cfnlambdaedgeusecases.png)
 
 ## 5. Global Accelerator
 
