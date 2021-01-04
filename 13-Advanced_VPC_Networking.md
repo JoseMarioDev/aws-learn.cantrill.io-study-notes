@@ -11,7 +11,30 @@
 
 ### concepts
 
+- essential diagnostic tool
+- need to know functionality for exam
+- only capture packet metadata. not packet contents
+- source/dest ip address, etc anything you can observe from the outside
+- can apply to 3 diff levels
+- VPC, subnet, interface
+- flow logs are not realtime
+- can be config to use S3 or cloudwatch logs
+- ![adv vpc flowlog concepts](img/advVPCflowlogconcepts.png)
+- inheritance down see arch slide
+
+### flow logs
+
+- collection of fields
+- ex: bob is pinging ec2 instance inside his subnet
+- flow log in slide
+- source dest ip port number protocol number accepted/rejected
+- dont log all traffic. some things are excluded
+- ![ex of log entry](img/advVPCflowlogentry.png)
+
 ### architecture
+
+- make sure you put the monitor in the correct spot. see slide
+  ![flow log arch](img/advVPCflowlogarch.png)
 
 ## 2. Egress-Only Internet Gateway
 
