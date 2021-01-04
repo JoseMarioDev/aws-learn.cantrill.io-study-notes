@@ -42,6 +42,8 @@
 
 ### summary
 
+- allow outbound(and response) only access to the public AWS services and public internet for IPv6 enabled instances or other VPC based services
+
 ### concepts
 
 ### architecture
