@@ -118,13 +118,15 @@
 
 #
 
-- this demo you implment bucket protection in S3 using OAI to restrict access to an S3 bucket to only a cloudfront distribution
+- this demo you implement bucket protection in S3 using OAI to restrict access to an S3 bucket to only a cloudfront distribution
 
 ## 4. Lambda@Edge
 
 #
 
 ### summary
+
+- Lambda@edge allows cloudfront to run lambda functions at cloudfront edge locations to modify traffic between the viewer and edge location and edge location and origins
 
 ### concepts
 
