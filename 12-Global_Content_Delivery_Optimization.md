@@ -127,8 +127,18 @@
 ### summary
 
 - Lambda@edge allows cloudfront to run lambda functions at cloudfront edge locations to modify traffic between the viewer and edge location and edge location and origins
+- starting to feature in exams
+- dont need experience implementing, but need to know arch
 
 ### concepts
+
+- run lightweight lambda functions at edge locations
+- adjust data between viewer and orgigin
+- limitations - currently support NodeJS and Python
+- run in the AWS public space - not VPC
+- layers are not supported(?)
+- different limits vs normal lambda functions
+- ![lambda edge concepts](img/cfnlambdaedgeconcepts.png)
 
 ### architecture
 
