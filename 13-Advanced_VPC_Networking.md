@@ -65,6 +65,9 @@
 
 ### summary
 
+- Gateway endpoints are a type of VPC endpoint which allows access to S3 and DynamoDB without using public addressing
+- Gateway endpoints add 'prefix lists' to a route table, allowing the VPC router to direct traffic flow to the public services via the gateway endpoint
+
 ### concepts
 
 ### architecture
