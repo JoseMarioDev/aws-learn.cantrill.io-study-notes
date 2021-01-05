@@ -75,8 +75,20 @@
 - normally public ip addresses are required
 - prefix list added to route table -> gateway endpoint
 - GE are highly available (HA) across all AZs in a region by default
+- endpoint policy is used to control what it can access
+- regional...can't access cross-region service
+- 2 main use cases
+  - private vpc allow to access public resources - S3 or DynamoDB
+  - private only S3 buckets. help prevent leaky buckets
+- limitations: only accessible from inside that specific VPC
+- ![vpc endpoints(gateway) concepts](img/advVPCgwendpts.png)
 
 ### architecture
+
+- current architecture w/o vpc endpts
+- ![arch w/o gateway](img/advVPCendptsgwarch-old.png)
+- arch w/gateway endpt
+- ![w/gateway](img/advVPCendptsgwarch-new.png)
 
 ## 4. VPC Endpoints (Interface)
 
