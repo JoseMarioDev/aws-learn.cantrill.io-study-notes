@@ -70,6 +70,12 @@
 
 ### concepts
 
+- used in more complex arch
+- provide private access to services - S3 and DynamoDB
+- normally public ip addresses are required
+- prefix list added to route table -> gateway endpoint
+- GE are highly available (HA) across all AZs in a region by default
+
 ### architecture
 
 ## 4. VPC Endpoints (Interface)
