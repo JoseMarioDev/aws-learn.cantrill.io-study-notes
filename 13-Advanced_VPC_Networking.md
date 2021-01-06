@@ -142,6 +142,11 @@
 
 ### summary
 
+## 3 part demo
+
+- part 1: accessing S3 using a gateway endpoint
+  - create a gateway endpoint which allow a private instance with a private VPC to connect to S3 service
+
 ## 5. VPC Peering
 
 #
