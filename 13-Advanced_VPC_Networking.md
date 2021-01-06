@@ -146,6 +146,10 @@
 
 - part 1: accessing S3 using a gateway endpoint
   - create a gateway endpoint which allow a private instance with a private VPC to connect to S3 service
+- part 2: using SNS from a private VPC using interface endpoints
+  - implement an interface endpoint to allow access to the SNS service from the private A4L VPC
+- part 3: implementing an egress-only internet gateway
+  - create an egress only internet gateway to provide the private IPv6 enabled EC2 instance with outgoing access to IPv6 internet
 
 ## 5. VPC Peering
 
