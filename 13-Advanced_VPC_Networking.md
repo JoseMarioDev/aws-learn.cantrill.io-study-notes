@@ -88,7 +88,7 @@
 - current architecture w/o vpc endpts
 - ![arch w/o gateway](img/advVPCendptsgwarch-old.png)
 - arch w/gateway endpt
-- ![w/gateway](img/advVPCendptsgwarch-new.png)
+- ![w/gateway](img/advVPCendptsgw.png)
 
 ## 4. VPC Endpoints (Interface)
 
@@ -96,9 +96,45 @@
 
 ### summary
 
+- interface endpoints are used to allow private IP addressing to access public AWS services
+- S3 and DynamoDB are handled by gateway endpoints
+- other supported services are handled by interface endpoints
+- unlike gateway endpoints, interface endpoints are not HA by default - they are normal VPC network interfaces and should be placed 1 per AZ to ensure full HA
+
 ### concepts
 
+- similar to gateway endpts but diff execution
+- provide private access to AWS public services
+- ...anything not S3 or DDB
+- difference: interface endpts are not HA by default
+  - added to specific subnets
+  - for HA add one endpt to one subnet per AZ used in the VPC
+- network access controlled via Security Group
+- Endpoint policies - restrict what can be done w/endpoint
+- TCP and IPv4 support only
+- uses PrivateLink behind the scenes
+- ![vpc endpoints interface concepts](img/advVPCendpts-interface.png)
+
+### more concepts
+
+- Gateway endpts use a prefix list
+- interface endpts use DNS
+- new DNS endpoint name
+- given number of DNS names
+  - endpoint regional DNS
+  - endpoint Zonal DNS
+- applications can optionally use these or ...
+- PrivateDNS overrides the default DNS for services
+- ![interface endpts concepts](img/advVPCinterfaceconcepts.png)
+
 ### architecture
+
+- arch example w/o interface endpts
+- ![ex w/o interface endpts](img/advVPCinterfacearch.png)
+- arch ex w/interface endpts
+- ![ex w/ interface endpts](img/advVPCwEndpts.png)
+- arch ex w/interface endpts and private DNS
+- ![ex w/ interface endpts and DNS](img/advVPCwEndptsDNS.png)
 
 ## Demos
 
