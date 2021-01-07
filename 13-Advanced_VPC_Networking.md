@@ -157,6 +157,10 @@
 
 ### summary
 
+- VPC peering is a software defined and logical networking connection between 2 VPCs
+- they can be created between VPCs in the same or different accounts and the same or different regions
+- this lesson steps through the architectural key points which you will need to understand for the exam and real world usage
+
 ### concepts
 
 ### architecture
