@@ -163,7 +163,22 @@
 
 ### concepts
 
+- service lets you create private encrypted link between 2 vpcs
+- no more than 2 vpcs
+- same region or cross-region and same/cross account
+- optional - public hostnames resolve to private IPs
+- same regions SGs can reference peer SGs
+- one vpc peer connects 2 vpc peers and only peers
+- VPC peering does not support transitive peering
+- routing config needed, SGs and NACLs can filter
+- ![vpc peering concepts](img/advVPCpeeringconcepts.png)
+
 ### architecture
+
+- ex: 3 vpcs in A4L
+- cannot have overlapping ip addresses in each VPC
+- communication is encrypted and transits over the AWS global network when using cross-region peering connections
+- ![vpc peering arch](img/advVPCpeeringarch.png)
 
 ## Demo
 
