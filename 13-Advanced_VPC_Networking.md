@@ -183,3 +183,7 @@
 ## Demo
 
 #
+
+### Summary
+
+- implementing set of vpc peering connections between 3 private and isolated A4L VPCs
