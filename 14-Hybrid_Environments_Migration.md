@@ -1,49 +1,121 @@
-### Border Gateway Protocol 101
+## 1. Border Gateway Protocol 101
 
-- content
-  - subcontent
+#
 
-### AWS Site-to-Site VPN
+### summary
 
-- content
-  - subcontent
+### concepts
 
-### Direct Connect
+### architecture
 
-- content
-  - subcontent
+## 2. AWS Site-to-Site VPN
 
-### Transit Gateway
+#
 
-- content
-  - subcontent
+### summary
 
-### Storage Gateway
+### concepts
 
-- content
-  - subcontent
+### architecture
 
-### Snowball/Edge/Snowmobile
+## Demos
 
-- content
-  - subcontent
+#
 
-### Directory Service
+### summary
 
-- content
-  - subcontent
+## 3. Direct Connect
 
-### DataSync
+#
 
-- content
-  - subcontent
+### summary
 
-### FSx for Windows Servers
+### concepts
 
-- content
-  - subcontent
+### architecture
 
-### FSx For Lustre
+## 4. Direct Connect Resilience
 
-- content
-  - subcontent
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 5. Transit Gateway
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## Demos
+
+#
+
+### summary
+
+## 6. Storage Gateway
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 7. Snowball/Edge/Snowmobile
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 8. Directory Service
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 9. DataSync
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 10. FSx for Windows Servers
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 11. FSx For Lustre
+
+#
+
+### summary
+
+### concepts
+
+### architecture
