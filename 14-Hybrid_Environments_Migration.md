@@ -30,6 +30,7 @@
 - AWS site to site VPN is a hardware solution which creates a highly scalable IPSEC VPN between an aWS VPN and external netowrk such as on-prem traditional networks
 - VPNs are quick to setup vs direct connect, dont offer the same high performance, but do encrypt data in transit.
 - this lesson details the concept and arch needed for exam
+  [hybrid site to site lesson link](https://learn.cantrill.io/courses/730712/lectures/15532724)
 
 ### concepts
 
