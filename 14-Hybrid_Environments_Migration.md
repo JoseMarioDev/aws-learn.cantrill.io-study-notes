@@ -143,7 +143,35 @@
 
 ### concepts
 
-### architecture
+#### none resilient connection
+
+- architecture w/no resilience
+- from AWS to DX connect location, connection is HA and resilient
+- at DX location, the customer and DX router is connected via cross-connect
+- from the cust router to cust prem is connected via telco
+- 7 single points of failure. see slide
+- ![ex of a no resilience DX arch](img/hybridDXresilience-nonearch.png)
+
+#### resilient connection - ok
+
+- using multiple DX connections. see slide
+- still some failure, if DX location fails, but better than before
+- 2 single points of failure
+- ![ok resilience, 2 single points of failure](img/hybridDXresilience-okarch.png)
+
+#### resilient connection - better
+
+- 2 independent cust premises
+- 2 different DX locations
+- see slide for arch ex
+- ![better resilience](img/hybridDXresilience-betterarch.png)
+
+#### resilient connection - great
+
+- 2 dx locations, with 2 ports at each location
+- 2 diff cust premises, with 2 routers at each location
+
+- ![great resilience](img/hybridDXresilience-greatarch.png)
 
 ## 5. Transit Gateway
 
