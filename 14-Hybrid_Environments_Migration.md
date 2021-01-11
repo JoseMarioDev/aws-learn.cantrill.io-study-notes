@@ -103,7 +103,33 @@
 
 ### concepts
 
+- like site to site VPN, but actual physical connection to AWS network
+- A 1Gbps or 10Gbps network port into AWS
+- at a DX location. see slides for physical standard
+- cust router is connected at DX location. router must support BGP
+- DX basically gives you a part at a DX location. you arrange the connection to that port
+- on top of the DX connection, you can run multiple virtual interfaces, known as VIFS
+- 2 types - private and public
+- encryption not supported by default
+- ![direct connect concepts](img/hybridDXconcepts.png)
+
 ### architecture
+
+![ex dX arch](img/hybridDXarch.png)
+
+### considerations
+
+- takes much longer to provision vs VPN
+- extension to prem can take weeks/months depending on telco company
+- DX is faster 40Gbps w/aggregation
+- low consistent latency, doesn't use business bandwidth
+- NO BUILT IN ENCRYPTION
+- ![considerations](img/hybridDXconsiderations.png)
+
+### encryption arch ex
+
+- run an IPsec vpn over the public VIF to encrypt in transit
+- ![encryption arch ex](img/hybridDXencryption.png)
 
 ## 4. Direct Connect Resilience
 
