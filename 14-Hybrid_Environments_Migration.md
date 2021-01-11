@@ -96,6 +96,11 @@
 
 ### summary
 
+- DirectConnect is AWS's physical private link connecting your business premises to it's public & private services
+- has pros/cons vs site-to-site VPN and it's impossible to demo w/o using
+- lesson teaches theory/arch needed for exam
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15532730)
+
 ### concepts
 
 ### architecture
