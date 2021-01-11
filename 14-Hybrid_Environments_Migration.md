@@ -34,7 +34,44 @@
 
 ### concepts
 
+- offer quickest way to create a link for AWS env and onprem
+- when and where to use for exam
+- logical connection between VPC and onprem network
+- encrypted using IPSec running over public internet
+- can be fully Highly Available if designed/implemented correctly
+- quick to provision. can be up/running less than 1 hour
+- components:
+  - vpc
+  - virtual private gateway(VGW)
+  - customer gateway(CGW)
+  - VPN connection between VGW and CGW
+- ![concepts](img/hybridsiteconcepts.png)
+
 ### architecture
+
+- partial high availability, HA on AWS side, not on cust side. see video and slides
+- ![hybrid arch ex w/failure](img/hybridsitearch-failure.png)
+- solution: add another onprem cust router. create another VPN connection that links to VGW. see slide and video
+- ![hybrid arch ex w/HA](img/hybridsitearch-HA.png)
+
+### static vs dynamic VPN (BGP)
+
+#### architecture
+
+- difference is how routes are communicated
+- static uses IPsec and must be manually configured
+- dynamic uses BGP and lets the routers communicate w/each other
+- ![static vs dynamic vpns](img/hybridsitestatic.png)
+
+#### considerations
+
+- speed limitations - 1.25Gbps know for exam
+- latency considerations - inconsistent, travels over public internet
+- cost - AWS hourly cost, GB out cost, data cap(on prem)
+- speed of setup - hours or less. all software configurations
+- can be used as backup for Direct Connect(DX)
+- can be used with Direct Connect(DX)
+- ![vpn considerations](img/hybridsitevpnconsiderations.png)
 
 ## Demos
 
