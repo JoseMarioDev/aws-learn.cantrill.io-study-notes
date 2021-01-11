@@ -179,6 +179,11 @@
 
 ### summary
 
+- is a network gateway which can be used to simplify networking between VPCs, VPN, and DX
+- can be used to peer VPCs in the same account, different account, same, or different region and supports transitive routing between networks
+- this lesson steps though features which allow for a significant reduction in network complexity
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15532731)
+
 ### concepts
 
 ### architecture
