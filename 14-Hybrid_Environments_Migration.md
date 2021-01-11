@@ -79,6 +79,17 @@
 
 ### summary
 
+#### 2 part demo
+
+1. part 1 - VPC and on-premises VPN part 1
+
+- implement a site-to-site VPN between and onprem location and AWS
+- lesson uses a UNIFI CGW - your steps may vary depending on vendor
+
+2. part 2 - VPC and on-premises VPN part 2
+
+- continued
+
 ## 3. Direct Connect
 
 #
