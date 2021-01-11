@@ -137,6 +137,10 @@
 
 ### summary
 
+- cover arch of a few resilient applications of DX
+- starting w/overview of the default implementation offers no resilience
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/24660629)
+
 ### concepts
 
 ### architecture
