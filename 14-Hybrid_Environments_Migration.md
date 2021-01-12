@@ -186,7 +186,34 @@
 
 ### concepts
 
-### architecture
+- network transit hub to connect VPCs to onprem networks
+- reduces network complexity
+- single network object - HA and scalability
+- VPC, site to site VPN, and DX gateway
+- ![concepts of TGW](img/hybridDXTGWconcepts.png)
+
+### architecture w/o TGW
+
+- requires connections to everything from each other, mesh network. see slide for example
+- ![arch w/o TGW mesh network messy](img/hybridDXTGWmesharch.png)
+
+### arch w/TGW
+
+- The TGW acts as a hub(or middleman), of sorts. see slide, compare vs w/o
+- acts a interVPC router - HA. see center TGW in slide
+- can peer w/other TGWs in other regions and other accounts
+- can also connect to DX connect gateway
+- supports multiple route tables allowing complex routing architectures
+- ![arch w/TGW much cleaner](img/hybridDXTGWarch.png)
+
+### considerations
+
+- supports transitive routing
+- can be used to create global networks
+- share between accounts using AWS RAM - resource access mgr
+- peer w/diff regions - same or cross account
+- less complexity vs w/o TGW
+- ![considerations](img/hybridDXTGWconsiderations.png)
 
 ## Demos
 
