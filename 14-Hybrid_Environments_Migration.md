@@ -232,6 +232,14 @@
 
 ### summary
 
+- storage gateway is a super flexible hybrid storage appliance
+- capable of running in 3 modes
+  - file
+  - tape
+  - volume - stored or cached
+- understanding the features of each, and when to use those features is a key part of any hybrid infrastructure question on the exam
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15532734)
+
 ### concepts
 
 ### architecture
