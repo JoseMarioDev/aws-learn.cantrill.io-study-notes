@@ -219,7 +219,12 @@
 
 #
 
-### summary
+### 2 part demo
+
+#### implementing advanced hybrid networking using TGW parts 1 and 2
+
+- implement a TGW to connect VPCs and onprem together
+- TGW is capable of transitive routing and makes implementing complex hybrid networks easier vs full mesh networks
 
 ## 6. Storage Gateway
 
