@@ -250,6 +250,10 @@
 
 ### summary
 
+- snowball, snowball edge, and snowmobile are three parts of the same product family designed to allow the physical transfer of data between business locations and AWS
+- knowing which to pick and why it's essential for the solutions architect exam
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15532735)
+
 ### concepts
 
 ### architecture
