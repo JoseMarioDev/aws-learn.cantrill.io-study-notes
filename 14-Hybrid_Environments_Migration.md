@@ -242,7 +242,50 @@
 
 ### concepts
 
+- can used many diff ways. flexible
+- hybrid storage virtual appliance - on prem
+- support a few diff scenarios:
+  - extension of file and volume storage onto AWS
+  - volume storage backups into AWS
+  - tape backup existing solutions into AWS
+  - migration of existing infrastructure to AWS
+- ![concepts](img/hybridSGconcepts.png)
+
+### runs in 3 modes
+
+- tape gateway(VTL) mode
+  - stores virtual tapes on S3 and Glacier
+- file mode - SMB and NFS
+  - maps files to S3 objects
+  - file storage backed by S3 objects
+- Volume mode (Gateway cache/stored)-iSCSI
+  - block storage backup by S3 and EBS snapshots
+- ![3 diff modes](img/hybridSGmodes.png)
+
 ### architecture
+
+#### file gateway arch
+
+- ![file gateway arch](img/hybridFileGatewayarch.png)
+
+#### Tape Gateway arch
+
+- stores in S3 and Glacier
+- ![tape gateway](img/hybridTapeGatwayarch.png)
+
+#### volume gateway - stored
+
+- creates EBS snapshots
+- exceptional for DR and migrations
+- data is stored locally, AWS is backup
+- ![volume gateway stored mode](img/hybridvolGWstored.png)
+
+#### volume gateway - cached
+
+- cached mode is for extensions into AWS
+- when capacity is limited and you want to decomission
+- data not stored locally, uploaded to AWS stored on S3 backup volume
+- ![vol gw cached arch](img/hybridVolGWcached.png)
 
 ## 7. Snowball/Edge/Snowmobile
 
