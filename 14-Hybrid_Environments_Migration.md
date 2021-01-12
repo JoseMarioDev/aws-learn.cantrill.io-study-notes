@@ -347,6 +347,13 @@
 #
 
 ### summary
+- product which provides managed directory service instances within AWS
+- functions in three modes:
+  - Simple AD: implementation of Samba 4
+  - AWS managed Microsoft AD: actual MS AD DS implementation
+  - AD Connector: proxies requests back to an onprem directory
+- lesson steps through the architecture of the service and use cases for each
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15690951)
 
 ### concepts
 
