@@ -299,7 +299,48 @@
 
 ### concepts
 
+- move large amts of data in/out of AWS
+- physical storage either suitcase or truck
+- can order empty, load, return
+- order w/data, empty, return
+- for exam, now use cases
+- ![concepts](img/hybridSnowballconcepts.png)
+
 ### architecture
+
+#### Snowball
+
+- physical device ordered from AWS, log a job, not instant
+- data encrypted using KMS
+- capacity: 50TB or 80TB
+- 1Gbps or 10Gbps
+- 10Tb to 10Pb economical range - makes it worth it
+- can order multiple devices, sent to multiple locations if needed
+- only includes storage - no compute capability
+- ![snowball concepts](img/hybridSnowballdetails.pngß)
+
+#### Snowball edge
+
+- both storage and compute
+- larger capacity vs Snowball
+- faster networking see slides for stats
+- 3 types:
+  - storage optimized. see slide
+  - compute optimized. see slide
+  - compute w/GPU
+- ideal for remote sites where data processing on ingestion is needed
+- ![snowball edge concepts](img/hybridSnowballEdgedetails.png)
+
+#### Snowmobile
+
+- portable data center inside a shipping container on a truck
+- literally a truck
+- special order
+- single location w/huge amts of data to ingest to AWS
+- ideal for location when 10PB+ is required
+- up to 100PB per snowmobile
+- not economical for smaller than 10PB or mulit-sites unless huge
+- ![snowmobile details](img/hybridSnowmobile.png)
 
 ## 8. Directory Service
 
