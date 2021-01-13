@@ -508,4 +508,39 @@
 
 ### concepts
 
-### architecture
+- relatively niche products, know use cases
+- managed Lustre - designed for HPC-Linux clients (POSIX)
+- 100s GB/s throughput and sub-millisecond latency
+- 2 deployment types: Persistent or Scratch
+- Scratch - highly optimized for short term, no replication
+- persistent - long term, HA, self healing
+- accessible over VPN or DX (direct connect)
+  ![Lustre concepts](img/hybridLustreconcepts.png)
+
+### architecture overview
+
+- data is lazy loaded the first time from source to FSx
+- no synchronization
+- you cn sync using HSM_archive command
+- not automatically in sync
+  ![Lustre conceptual overview](img/hybridLustrefeatures.png)
+
+### architecture key points and visual
+
+- metadata stored on metadata targets(MST)
+- objects are stored on called object storage targets
+- baseline performance based on size
+- size min increments on slide
+- uses Elastic Network Interface
+- ![Lustre arch](img/hybridLustrearch.png)
+
+### key points
+
+- Scratch is designed for pure performance
+- short term or temp workloads
+- no HA no replication
+- larger file systems means more servers more disks and more chance of failure
+- persistent has replication within one AZ only
+- auto heals when hardware failure occurs
+- you can bckup to S3 with both! manual or automatic
+  ![lustre key concepts](img/hybridLustrekeys.png)
