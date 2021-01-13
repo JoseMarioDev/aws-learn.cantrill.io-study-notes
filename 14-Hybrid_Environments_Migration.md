@@ -471,7 +471,30 @@
 
 ### concepts
 
+- supports windows env in AWS
+- fully managed native windows file servers/shares
+- designed for intergration w/windows environments
+- integrates with Directory Service or self-managed AD
+- single or multi-AZ within a VPC
+- on-demand and scheduled backups
+- accessible w/in VPC, Peering, VPN, Direct Connect
+- accessed using SMB protocol
+  ![fsx concepts](img/hybridFSxconcepts.png)
+
 ### architecture
+
+- vpc on left, cust prem on right. connected via DX or VPN
+- ![FSx arch ex](img/hybridFSxarch.png)
+
+### FSx Key Features and Benefits
+
+- VSS - windows feature allows users to file level restores
+- native file system accessible over SMB
+- uses windows permission model
+- supports DFS...scale out file structure
+- managed - no file server admin
+- integrates w/DS and your own directory
+- ![FSx key features](img/hybridFSxkeys.png)
 
 ## 11. FSx For Lustre
 
