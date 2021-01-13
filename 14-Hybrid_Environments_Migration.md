@@ -347,6 +347,7 @@
 #
 
 ### summary
+
 - product which provides managed directory service instances within AWS
 - functions in three modes:
   - Simple AD: implementation of Samba 4
@@ -357,7 +358,56 @@
 
 ### concepts
 
-### architecture
+- a managed directory, store of users, objects, and other configurations
+- directories:
+  - store objects - users, groups, computers, servers, file shares within a structure(domain, tree)
+  - multiple trees can be grouped into a forest
+  - commonly used in windows environment
+  - sign into multiple devices with same username password
+  - commonly used: Microsoft Active Directory Domain Services
+  - open source alternative: open-source alternatives(SAMBA)
+- ![DS concepts](img/hybridDSconcepts.png)
+
+### architectures
+
+#### AWS Directory Service
+
+- AWS managed implementation
+- runs within a VPC - private service
+- to implement HA deploy into multiple AZs
+- some AWS services need a directory - example: Amazon Workspaces
+- can be isolated or integrated with existing onprem system
+- or act as a proxy back to your onprem
+- ![AWS DS concepts](img/hybridDSconcepts.png)
+
+#### architecture - Simple AD Mode
+
+- cheapest way to run
+- meant to run in isolation
+- ![simple AD arch](img/hybridDSsimpleAD.png)
+
+#### architecture - Managed Microsoft AD Mode
+
+- designed when you have onprem env and want AWS presence
+- can create trust relationship between AWS presence and onprem AD
+- resilient if the VPN fails
+- ![managed MS AD arch](img/hybridDSmsAD.png)
+
+#### architecture - AD connector
+
+- on prem directory already, and you dont want to create a new one
+- establish private connection your onprem and AWS
+- create a VPN between AWS and your onprem
+- is only a proxy used to integrate with AWS services
+- no local functionality
+- ![ad connector](img/hybridDSadConnector.png)
+
+### picking between modes
+
+- simple AD - the default. simple requirements
+- Microsoft AD - when applications in AWS need MS AD DS or you need a trust relationship
+- AD Connector - use AWS services which need a directory without storing any directory info in the cloud
+- ![when to pick modes](img/hybridDSmodes.png)
 
 ## 9. DataSync
 
