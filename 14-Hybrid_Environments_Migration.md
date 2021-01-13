@@ -414,11 +414,49 @@
 #
 
 ### summary
+
 - product which can orchestrate the movement of large scale data(amounts or files) from on-premises NAS/NAS into AWS or vice-vera
 - [lesson link](https://learn.cantrill.io/courses/730712/lectures/15690952)
+
 ### concepts
 
+- need to be aware of what it is, what it does, and use cases
+- data transfer service to and from AWS
+- manages process end to end
+- used for migrations, data processing transfers, archival, DR, BC
+- designed to work at huge scale
+- uses agents and jobs
+- keeps metadata ex: permissions, timestamps
+- built in data validation
+- ![DataSync concepts](img/hybridDatasyncconcepts.png)
+
+### key features
+
+- scalable - 10Gbps per agent
+- bandwidth limiters (avoids link saturation)
+- incremental and scheduled xfer options
+- compression and encryption
+- automatic recovery from transit errors
+- AWS service integration - S3, EFS, FSx
+- pay as you go, per gb cost
+- ![Datasync key features](img/hybridDatasyncfeatures.png)
+
 ### architecture
+
+- onprem left, AWS region right
+- NAS onprem needs to move to AWS
+- install datasync agent on prem server
+- communicates with datasync endpt on AWS
+- data can be stored on AWS services
+- can be scheduled and/or bandwidth limit
+  ![arch example](img/hybridDatasyncarch.png)
+
+### components
+
+- task - job within datasync. what, how, from, where
+- agent - software used to read/write to onprem data stores using NFS or SMB
+- location - every task as 2 locations. from/to
+- ![datasync components](img/hybridDatasynccomponents.png)
 
 ## 10. FSx for Windows Servers
 
