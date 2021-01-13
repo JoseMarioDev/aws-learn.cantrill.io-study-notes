@@ -464,6 +464,11 @@
 
 ### summary
 
+- FSx for Windows Servers provides a native windows file system which can be used within AWS or from onprem environments via VPN or Direct Connect
+- FSx is advanced share file system accessible over SMB and integrates with Active Directory(either managed or self hosted)
+- it provides advanced features such as VSS, data de-duplication, backups, encryption at rest, and forced encryption in transit
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15749267)
+
 ### concepts
 
 ### architecture
