@@ -502,6 +502,10 @@
 
 ### summary
 
+- managed file system which uses FSx product design for high performance computing
+- delivers extreme performance for scenarios such as big data, ML, financial modeling
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/22586267)
+
 ### concepts
 
 ### architecture
