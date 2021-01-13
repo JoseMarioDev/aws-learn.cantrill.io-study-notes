@@ -414,7 +414,8 @@
 #
 
 ### summary
-
+- product which can orchestrate the movement of large scale data(amounts or files) from on-premises NAS/NAS into AWS or vice-vera
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15690952)
 ### concepts
 
 ### architecture
