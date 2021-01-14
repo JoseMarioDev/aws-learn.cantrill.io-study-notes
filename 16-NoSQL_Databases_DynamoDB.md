@@ -98,7 +98,24 @@
 
 ### concepts
 
-### architecture
+- 2 consistency modes: eventual and strong?
+- each AZ is a storage node, one node is elected leader
+- leader is consistent, it replicates to other nodes every 4 milliseconds
+- eventual scales better, but doesnt guarantee most recent data. see ex w/Julie
+- 50 percent cheaper
+- if you access DDB at the wrong time, you might get outdated data (w/eventual mode)
+- strong mode always uses the leader node, so it's always current
+- ![consistency reads model example](img/nosqlDDBconmodelarch.png)
+
+### WCU calculation
+
+- calculate per second
+- ![WCU calculations](img/nosqlDDBwcucalc.png)
+
+### RCU calculation
+
+- see slide for match
+- ![RCU calculation](img/nosqlDDBrcucalc.png)
 
 ## 4. DynamoDB - Streams & Lambda Triggers
 
