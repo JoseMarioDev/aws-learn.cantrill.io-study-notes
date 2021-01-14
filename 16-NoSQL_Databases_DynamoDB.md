@@ -254,6 +254,10 @@
 
 ### summary
 
+- DDB Accelerator(DAX) is an in-memory cache designed specifically for DDB
+- should be default choice for any DDB caching related questions
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15662769)
+
 ### concepts
 
 ### architecture
