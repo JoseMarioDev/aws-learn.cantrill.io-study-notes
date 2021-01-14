@@ -55,9 +55,11 @@
 #
 
 ### summary
-
+- steps through some key elements of Reads and Writes to DDB
+- how the Query and Scan operations work
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15601351)
 ### concepts
-
+- 
 ### architecture
 
 ## 3. DynamoDB - Operations, Consistency and Performance - Part 2
