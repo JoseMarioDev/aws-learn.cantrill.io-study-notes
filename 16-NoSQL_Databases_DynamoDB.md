@@ -224,7 +224,8 @@
 #
 
 ### summary
-
+- DDG global tables provides multi-master global repliction of DDB tables which can be used for performance, HA or DR/BC reasons
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15662768)
 ### concepts
 
 ### architecture
