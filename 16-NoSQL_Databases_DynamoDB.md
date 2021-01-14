@@ -92,6 +92,10 @@
 
 ### summary
 
+- steps through consistency model in DDB
+- looks at 2 RCU and WCU calculation examples
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15603829)
+
 ### concepts
 
 ### architecture
