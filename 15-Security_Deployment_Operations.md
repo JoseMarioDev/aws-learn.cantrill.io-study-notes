@@ -11,7 +11,20 @@
 
 ### concepts
 
+- often gets confused w/SSM parameter store
+- when to use one vs the other. does share some functionality with Parameter Store
+- Secrets Manager is designed for secrets....passwords, API Keys
+- usable via console, CLI, API, or SDKs(integration)
+- supports automatic rotation of secrets using Lambda
+- directly integrates with some AWS products(RDS)
+- ![Secrets Manager concepts](img/securitySMconcepts.png)
+
 ### architecture
+
+- ex of a web app using SDK retrieve database creds
+- Secrets Manager can periodically use Lambda function to rotate secrets
+- secured using KMS
+- ![Secrets Mgr arch example](img/securitySMarch.png)
 
 ## 2. AWS WAF & Shield
 
