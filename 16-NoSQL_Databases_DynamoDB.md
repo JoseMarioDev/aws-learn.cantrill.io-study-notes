@@ -176,7 +176,48 @@
 
 ### concepts
 
-### architecture
+- query can only work on 1 PK value at a time
+- indexes are alternative views on table data
+- LSI allow diff SK, GSI allow diff PK and SK
+- some or all attributes - projection
+- ![LSI GSI concepts](img/nosqlIndexesconcepts.png)
+
+### LSI
+
+- alternative view for table
+- must be created with a table
+- 5 LSIs per base table
+- Alternative SK on the table
+- share the RCU and WCU with the table
+- attributes - ALL, KEYS_ONLY, INCLUDE
+- ![LSI concepts](img/nosqlLSIconcepts.png)
+
+#### LSI visually
+
+- indexes are sparse, see slide and video
+- ![LSI visually](img/nosqlLSIarch.png)
+
+### GSI
+
+- can be created at any time
+- default limit of 20 per base table
+- alternative PK and SK
+- GSIs have their own RCU and WCU allocations
+- attributes - ALL, KEYS_ONLY, INCLUDE
+- ![GSI concepts](img/nosqlGSIconcepts.png)
+
+#### GSI visually
+
+- are also sparse, see slide
+- ![GSI visually](img/nosqlGSIarch.png)
+
+### considerations
+
+- careful w/projections - KEYS_ONLY, INCLUDE, ALL
+- queries on attributes not projected are expensive
+- use GSIs as default, LSI only when strong consistency is required
+- use Indexes for alternative access patterns
+- ![LSI GSI considerations](img/nosqlIndexesconsiderations.png)
 
 ## 6. DynamoDB - Global Tables
 
