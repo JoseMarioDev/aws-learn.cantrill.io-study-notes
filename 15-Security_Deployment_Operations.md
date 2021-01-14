@@ -72,6 +72,11 @@
 
 ### summary
 
+- AWS provided Hardware Security Module products
+- CloudHSM is required to achieve compliance with certain security standards such as FIPS 140-3 Level 3
+- [more info on FIPS](https://en.wikipedia.org/wiki/FIPS_140-2)
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15828633)
+
 ### concepts
 
 ### architecture
