@@ -170,6 +170,10 @@
 
 ### summary
 
+- Local Secondary Indexes (LSI) and Global Secondary Indexes(GSI) allow for an alternative presentation of data stored in a base table
+- LSI allows for alternative SK's where GSIs you can use an alternative PK and SK
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15662767)
+
 ### concepts
 
 ### architecture
