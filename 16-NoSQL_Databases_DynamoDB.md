@@ -55,12 +55,36 @@
 #
 
 ### summary
+
 - steps through some key elements of Reads and Writes to DDB
 - how the Query and Scan operations work
 - [lesson link](https://learn.cantrill.io/courses/730712/lectures/15601351)
+
 ### concepts
-- 
-### architecture
+
+- 2 capacity modes when creating a table - ondemand and provisioned
+  - ondemand - unknown, unpredictable, low admin
+    - price per million R or W units
+  - provisioned - set capacity value RCU and WCu set on a per table basis
+    - every operation consumes 1 unit RCU or WCU
+    - 1 RCU is 4kb read operation per second
+    - 1 WCU is 1kb write operation per second
+    - every table has an RCU and WCU burst pool
+- ![capacity modes concepts](img/nosqlDDBoperations.png)
+
+### operations architecture
+
+#### query
+
+- accepts a single PK value and optionally a SK or range. see slide for ex
+- ![query example](img/nosqlDDBquery.png)
+
+#### scan
+
+- search across an entire table
+- more flexible operation, least efficient
+- really expensive from a capacity perspective
+- ![scan example](img/nosqlDDBscan.png)
 
 ## 3. DynamoDB - Operations, Consistency and Performance - Part 2
 
