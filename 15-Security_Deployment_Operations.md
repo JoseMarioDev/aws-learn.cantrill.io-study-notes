@@ -79,4 +79,36 @@
 
 ### concepts
 
+- similar to KMS in functionality
+- creates, manages, secures keys
+- when to use KMS vs CloudHSM
+
+#### KMS
+
+- with KMS, AWS managed, shared but separate
+- KMS uses HMS behind the scenes Hardware Security Module
+- Level 2 compliant, some level 3
+
+#### cloudHSM
+
+- is a true 'single tenant' HSM
+- AWS provisioned but fully managed by customer
+- FIPS 140-2 Level 3 compliant
+- access w/industry standard APIs see slide
+- KMS can use CloudHSM as custom key store, CloudHSM integration with KMS
+  ![HSM concepts](img/securityHSMconcepts.png)
+
 ### architecture
+
+- not HA by default, need to create cluster
+- injected into your AWS VPC via ENI
+- need to install on CloudHSM client on EC2 instances
+- ![HSM arch ex](img/securityHSMarch.png)
+
+### CloudHSM use cases
+
+- no native AWS integration. ex: no S3 server side encryption
+- can be used to offload SSL/TLS processing for web servers
+- enable Transparent Data Encryption(TDE) for Oracle Databases
+- protect the private keys for an issuing Certificate Authority
+- ![use cases](img/securityHSMusecases.png)
