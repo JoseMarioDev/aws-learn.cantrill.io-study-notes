@@ -135,7 +135,34 @@
 
 ### concepts
 
-### architecture
+#### streams
+
+- time ordered list of Item Changes in a table
+- 24 hour rolling window
+- enabled on per table basis
+- records INSERTS, UPDATES, DELETES
+- different view types influence what is in the stream
+  ![stream concepts](img/nosqlStreamsconcepts.png)
+
+#### streams visually
+
+- ![ex of a stream visually](img/nosqlStreamsarch.png)
+
+#### Triggers
+
+- action based on change in data, event driven
+- ITEM changes generates event
+- event contains the data which changed
+- an action is taken using that data
+- AWS = Streams and Lambda
+- reporting and analytics
+- data aggregation, messaging, notifications, etc use cases
+- ![triggers concepts](img/nosqlTriggersconcepts.png)
+
+#### Triggers visually
+
+- see slide for ex when Lambda function is triggered
+- ![triggers explained visually](img/nosqlTriggersarch.png)
 
 ## 5. DynamoDB Local and Global Secondary Indexes
 
