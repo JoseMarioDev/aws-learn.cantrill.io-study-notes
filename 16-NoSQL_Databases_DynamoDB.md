@@ -1,54 +1,115 @@
-### DyanmoDB - Architecture
+## 1. DyanmoDB - Architecture
 
-- content
-  - subcontent
+#
 
-### DynamoDB - Operations, Consistency, and Performance - Part 1
+### summary
 
-- content
-  - subcontent
+### concepts
 
-### DynamoDB - Operations, Consistency and Performance - Part 2
+### architecture
 
-- content
-  - subcontent
+## 2. DynamoDB - Operations, Consistency, and Performance - Part 1
 
-### DynamoDB - Streams & Lambda Triggers
+#
 
-- content
-  - subcontent
+### summary
 
-### DynamoDB Local and Global Secondary Indexes
+### concepts
 
-- content
-  - subcontent
+### architecture
 
-### DynamoDB - Global Tables
+## 3. DynamoDB - Operations, Consistency and Performance - Part 2
 
-- content
-  - subcontent
+#
 
-### DynamoDB - Accelerator (DAX)
+### summary
 
-- content
-  - subcontent
+### concepts
 
-### Amazon Athena
+### architecture
 
-- content
-  - subcontent
+## 4. DynamoDB - Streams & Lambda Triggers
 
-### Elasticache
+#
 
-- content
-  - subcontent
+### summary
 
-### Redshift Architecture
+### concepts
 
-- content
-  - subcontent
+### architecture
 
-### Redshift DR and Resilience
+## 5. DynamoDB Local and Global Secondary Indexes
 
-- content
-  - subcontent
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 6. DynamoDB - Global Tables
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 7. DynamoDB - Accelerator (DAX)
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 8. Amazon Athena
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## Demos
+
+#
+
+### summary
+
+## 9. Elasticache
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 10. Redshift Architecture
+
+#
+
+### summary
+
+### concepts
+
+### architecture
+
+## 11. Redshift DR and Resilience
+
+#
+
+### summary
+
+### concepts
+
+### architecture
