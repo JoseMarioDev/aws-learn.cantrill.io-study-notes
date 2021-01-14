@@ -32,6 +32,11 @@
 
 ### summary
 
+- AWS Shield and Web Application Firewall are both products which provide perimeter defense for AWS networks
+- Shield provides DDOS protection and WAF is a Layer 7 Application firewall
+- [what is a DDOS attack](https://www.cloudflare.com/en-au/learning/ddos/what-is-a-ddos-attack/)
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15792890)
+
 ### concepts
 
 ### architecture
