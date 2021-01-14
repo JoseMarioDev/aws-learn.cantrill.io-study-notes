@@ -224,11 +224,29 @@
 #
 
 ### summary
+
 - DDG global tables provides multi-master global repliction of DDB tables which can be used for performance, HA or DR/BC reasons
 - [lesson link](https://learn.cantrill.io/courses/730712/lectures/15662768)
+
 ### concepts
 
+- provide multi master replication
+- all tables are the same
+- tables are created in multiple region, and added to the same global table - becoming replicas
+- Last writer wins is used for conflict resolution
+- reads/writes occur to any region
+- fast
+- strongly consistent reads ONLY in the same region as writes
+- ![global tables concepts](img/nosqlGlobaltableconcepts.png)
+
 ### architecture
+
+- select AWS regions which will be part of global tables
+- create DDB tables. select one, add all other tables to global table configuration
+- sub-second replication
+- globally eventually consistent
+- provides global HA, DR, BC
+- ![global tables arch](img/nosqlGlobaltablearch.png)
 
 ## 7. DynamoDB - Accelerator (DAX)
 
