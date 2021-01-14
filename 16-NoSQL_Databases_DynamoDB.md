@@ -123,6 +123,16 @@
 
 ### summary
 
+- DDB Streams are a 24hour rolling window of time ordered changes to Items in a DDB table
+- streams have to be enabled on a per table basis
+- have 4 view types
+  - KEYS_ONLY
+  - NEW_IMAGE
+  - OLD_IMAGE
+  - NEW_AND_OLD_IMAGES
+- Lambda can be integrated to provide trigger functionality, invoking when new entries are added to the stream
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15601352)
+
 ### concepts
 
 ### architecture
