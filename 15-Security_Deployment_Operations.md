@@ -39,7 +39,32 @@
 
 ### concepts
 
+- more prominent on the exam then before
+
+#### AWS Shield
+
+- provides AWS resources w/DDoS protection
+- comes in 2 versions:
+  - Shield standard - free w/Route53 and Cloudfront
+  - protection against Layer 3 and Layer 4 DDoS attacks
+  - Shield Advanced - $3k per month
+  - EC2, ELB, Cloudfront, Global Accelerator, Route53
+  - 24/7 365 access to DDoS response team and financial insurance
+- ![Shield concepts](img/securityShieldconcepts.png)
+
+#### AWS WAF - web application firewall
+
+- Layer 7 (HTTP/S) firewall - Application layer
+- protects against complex layer 7 attacks
+- SQL injections, cross site scripting, Geo Blocks, Rate awareness
+- uses web ACL intergrates w/ALB, API Gateway, Cloudfront
+- ACL has rules and evaluated when traffic arrives
+- ![WAF concepts](img/securityWAFconcepts.png)
+
 ### architecture
+
+- common to use Shield and WAF together
+- ![WAF and Shield together in arch ex](img/securityShieldWAFarch.png)
 
 ## 3. CloudHSM
 
