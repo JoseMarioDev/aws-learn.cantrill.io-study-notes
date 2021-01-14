@@ -4,6 +4,9 @@
 
 ### summary
 
+- DynamoDB is a NoSQL fully managed DBaaS product available within AWS
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15601347)
+
 ### concepts
 
 ### architecture
