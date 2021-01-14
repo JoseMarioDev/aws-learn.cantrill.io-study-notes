@@ -1,4 +1,4 @@
-## 1. DyanmoDB - Architecture
+## 1. DynamoDB - Architecture
 
 #
 
