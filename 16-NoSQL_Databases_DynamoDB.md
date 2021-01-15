@@ -299,7 +299,24 @@
 
 ### concepts
 
+- serverless interactive querying service
+- take data stored in S3 and perform adhoc queries
+- pay only data consumed - on demand
+- uses process called schema-on-read - table-like translation
+- original data is never changed - remains on S3
+- Schema translates data -> relationship like when read
+- output can be sent to other AWS services, can be event driven
+- ![Athena concepts](img/nosqlAthenaconcepts.png)
+
 ### architecture
+
+- starts w/source data on S3. data is read only, never modified
+- supports multiple formats, see slide
+- can read data directly from AWS services as well
+- inside you create a schema, define tables
+- how to get original data to a table
+- interact w/data using SQL queries
+- ![Athena arch example](img/nosqlAthenaarch.png)
 
 ## Demos
 
