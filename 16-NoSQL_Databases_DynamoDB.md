@@ -340,6 +340,11 @@
 
 ### summary
 
+- Elasticache is a managed in memory cache which provides a managed implementation of the redis or memcached engines
+- useful for heavy workloads, scaling reads in a cost effective way and allowing for externally hosted user session state
+- [aws pricing documentation](https://aws.amazon.com/elasticache/pricing/)
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/22586311)
+
 ### concepts
 
 ### architecture
