@@ -322,7 +322,17 @@
 
 #
 
-### summary
+### 2 part demo
+
+#### Athena Demo part 1
+
+- use Athena to query the open street map database to locate local animal vet facilities for the animal mobile teams
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/17567378)
+
+#### Athena Demo part 2
+
+- use Athena to query the open street map database to locate local animal vet facilities for the animal mobile teams
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/17567380)
 
 ## 9. Elasticache
 
