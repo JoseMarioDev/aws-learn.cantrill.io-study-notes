@@ -260,7 +260,32 @@
 
 ### concepts
 
+- DAX in memory cache for DDB
+- improves performance, integrated
+
+#### traditional cache vs DAX
+
+- installs DAX sdk on application
+- DAX acts a middleman
+- less complex for the app developer
+- ![ex of traditional vs DAX](img/nosqlDAXexample.png)
+
 ### architecture
+
+- deploy across AZs in a VPC
+- uses nodes, primary node replicates to reads in other AZs
+- 2 caches - Item Cache and Query Cache
+- ![DAX arch](img/nosqlDAXarch.png)
+
+### key considerations
+
+- cluster - primary node(writes) replicas(reads)
+- nodes are HA, primary failure, there is election for new primary
+- in memory cache - scaling, much faster reads, reduces costs
+- scale up or scale out (bigger or more instances)
+- supports write-through
+- DAX is deployed inside a VPC
+- ![considerations](img/nosqlDAXconsiderations.png)
 
 ## 8. Amazon Athena
 
