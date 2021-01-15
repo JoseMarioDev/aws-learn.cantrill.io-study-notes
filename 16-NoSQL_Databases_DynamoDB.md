@@ -293,6 +293,10 @@
 
 ### summary
 
+- Athena is a serverless querying service which allows for ad-hoc questions where billing is based on the amt of data consumed
+- Athena is an underrated service capable of working w/structured, unstructured, semi-structured data
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/15662776)
+
 ### concepts
 
 ### architecture
