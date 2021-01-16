@@ -347,7 +347,39 @@
 
 ### concepts
 
-### architecture
+- allows apps to scale to high levels of performance
+- in-memory database - high performance
+- two diff engines - Redis and memcached as a service
+- can be used to cache data, for read heavy workloads, w/low latency requirements
+- reduces database workloads - expensive
+- cost effective
+- can be used to store session data (stateless server)
+- requires application code changes
+- ![Elasticache concepts](img/nosqlElasticacheconcepts.png)
+
+### architecture - caching
+
+- first time users queries application, it checks cache first, it misses, goes to DB for data
+- app will write data into cache, future queries come from cache
+- allows us to scale and access more customers easier
+  ![elasticache arch example](img/nosqlElasticacheCachingarch.png)
+
+### architecture - session state data
+
+- user session data is written to ElastiCache
+- if EC2 instance fails, users connection is moved to another instance by ELB
+- ElastiCache loads user's session data to new instance, no disruption to user
+- ![arch ex of session state data](img/nosqlElasticacheSessionsarch.png)
+
+### engines- Redis vs MemcacheD
+
+- both fast and support multiple languages
+- diff: data structure support - see slide
+- diff: redis supports multi-AZ
+- diff: memchacheD - supports multiple nodes(sharding) - redis supports replication
+- diff: memcacheD - no backups, Redis - backup and restore
+- diff: memcacheD - multithreaded Redis - transactions
+- ![diff between the 2](img/nosqlElasticacheComparisions.png)
 
 ## 10. Redshift Architecture
 
