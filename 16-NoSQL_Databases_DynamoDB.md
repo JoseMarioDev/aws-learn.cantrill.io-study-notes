@@ -447,4 +447,4 @@
   - can take manual snapshots
   - resilient because of S3 benefits
 - if all AZs in a region fail, you can backup S3 snapshots to another region
-- ![using S3 as backups](img/nosqlReshiftBackups.png)
+- ![using S3 as backups](img/nosqlRedshiftBackups.png)
