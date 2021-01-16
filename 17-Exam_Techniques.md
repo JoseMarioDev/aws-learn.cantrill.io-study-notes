@@ -96,7 +96,25 @@
 
 #
 
-### summary
+### another example question
+
+- multi-select question
+- identify wrong answers
+- identify what matters in the question text - in red
+- look for key words and word fluff
+- ![another sample question](img/examQsample2.png)
+- correct answers: C and D
+
+### hints and tips
+
+- try to eliminate crazy answers
+- find what matters in the question
+- highlight remove word fluff
+- identify what matters in the answers
+- eliminate bad answers
+- worse case select between what remains
+- dont panic
+- ![question hints tips](img/examQtips.png)
 
 ## 4. Practice Quiz #1
 
