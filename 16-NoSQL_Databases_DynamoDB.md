@@ -434,6 +434,17 @@
 
 ### summary
 
+- details backup options for Redshift to overcome the single AZ risk
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/24160434)
+
 ### concepts
 
-### architecture
+- continuation of theory from previous lesson
+- Redshift only runs in 1 AZ (AZ-B in the example)
+- recovery features:
+  - utilize S3 snapshots for backups. see slide for details
+  - snapshots are incremental, only the changed data is stored/charged for
+  - can take manual snapshots
+  - resilient because of S3 benefits
+- if all AZs in a region fail, you can backup S3 snapshots to another region
+- ![using S3 as backups](img/nosqlReshiftBackups.png)
