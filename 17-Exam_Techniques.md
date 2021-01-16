@@ -59,6 +59,39 @@
 
 ### summary
 
+- how to approach questions in the exam
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/16016305)
+
+### question breakdown
+
+- 1-2 lines of preamble(scenario)
+- then the question itself - usually brief
+- 4/5 answers....multiple choice or multiple select
+- at associate level, generally answer is right/wrong
+- occasionally some answers are "most suitable"
+- generally 1 or 2 answers that can be excluded
+  - locate those first
+- ![breakdown](img/examQbreakdown.png)
+
+### question breakdown slide 2
+
+- most questions have an overall criteria or restriction
+  - cost effective for example
+  - the term "Best Practice" -> do what AWS wants you to do
+  - term "Highest Performance"
+  - term "Time Frame"
+- ![exam breakdown slide 2](img/examQbreakdown2.png)
+
+### sample question
+
+- identify key words in red
+- identify what's missing
+- identify what the question is asking
+- look for word fluff
+- look at the key words, they matter
+- ![sample question breakdown](img/examQsample.png)
+- correct answer is A
+
 ## 3. Question Technique part 2
 
 #
