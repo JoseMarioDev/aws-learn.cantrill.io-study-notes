@@ -387,6 +387,10 @@
 
 ### summary
 
+- Redshift is a column based, petabyte scale, data warehousing product within AWS
+- designed for OLTP products within AWS/onprem to add data for long-term processing, aggregation and trending
+- [lesson link](https://learn.cantrill.io/courses/730712/lectures/24160433)
+
 ### concepts
 
 ### architecture
