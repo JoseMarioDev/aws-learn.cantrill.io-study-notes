@@ -393,7 +393,40 @@
 
 ### concepts
 
+- petabyte scale data warehouse
+- supports huge volumes of data
+- OLAP(column based) not OLTP (row/transactions)
+- OnLine Analytical Processing - OLAP for more detailed long term analysis
+- remember data is stored in columns for reporting style queries
+- pay as you use...similar pay structure to RDS
+- 2 features:
+  - Redshift Spectrum: direct query to S3
+  - federated query: directly query data in remote data sources - foreign db
+- integrates with AWS tooling such as Quicksight
+- supports SQL like interfaces - JDBC/ODBC connections
+- ![concepts](img/nosqlRedshiftconcepts.png)
+
+### key points and features
+
+- server based. Not serverless
+- needs to be provisioned
+- not adhoc - that's Athena
+- uses cluster architecture - most of cluster is private
+- runs in one AZ in a VPC
+- cluster has a leader node - query input, planning, aggregation
+- cluster has a compute node - performing queries of data assigned by leader
+- compute nodes are given slices
+- integrates with AWS services: VPC security, IAM permissions, KMS at rest encryption, CW monitoring
+- feature: enhanced VPC routing - VPC networking (?) - uses internal networking control instead of default public routes Redshift uses
+  ![key points](img/nosqlRedshiftfeatures.png)
+
 ### architecture
+
+- Redshift cluster inside a VPC
+- outside of VPC, applications interact w/leader node
+- compute nodes in clusters and slices
+- backups to S3 for some backup functionality
+- ![visual ex](img/nosqlRedshiftarch.png)
 
 ## 11. Redshift DR and Resilience
 
